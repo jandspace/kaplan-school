@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/* Inherit from KIE Drupal */
+
+/* AND */
+
+.fullwidth { 
+	width: 100vw;
+	position: relative;
+	left: calc(-50vw + 50%);
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}

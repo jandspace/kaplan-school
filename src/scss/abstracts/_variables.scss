@@ -1,0 +1,128 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// -------------------------
+// DEVICE LIST
+
+$xs-min: 	"only screen and (min-width: 0px)";
+$xs-max: 	"only screen and (max-width: 767px)";
+$xs-only:	"only screen and (min-width: 0px) and (max-width: 767px)";
+
+$sm-min: 	"only screen and (min-width: 768px)";
+$sm-max: 	"only screen and (max-width: 991px)";
+$sm-only:	"only screen and (min-width: 768px) and (max-width: 991px)";
+
+$md-min: 	"only screen and (min-width: 992px)";
+$md-max: 	"only screen and (max-width: 1199px)";
+$md-only:	"only screen and (min-width: 992px) and (max-width: 1199px)";
+
+$lg-min: 	"only screen and (min-width: 1200px)";
+$lg-max: 	"only screen and (max-width: 1599px)";
+$lg-only:	"only screen and (min-width: 1200px) and (max-width: 1599px)";
+
+$xl-min: 	"only screen and (min-width: 1600px)";
+
+
+// -------------------------
+// Primary Colour
+
+// Primary Colour Blue Gray
+$color-primary:							#232f84;
+
+// Primary Colour Blue Gray - Light
+$color-primary-light:					#414980;
+
+// Primary Colour Blue Gray - Dark
+$color-primary-dark:					#121b60;
+
+
+// -------------------------
+// Secondary Color
+
+// Secondary Color - Kaplan Blue
+$color-secondary-blue:					#0069aa;
+$color-secondary-skyblue:				#00a5d9;
+
+// Secondary Color - Other
+$color-secondary-lime:					#c1d82f;
+$color-secondary-orange:				#f47b20;
+$color-secondary-red:					#ed174f;
+
+
+// -------------------------
+// Neutral Colour
+$color-neutral-a:						#2F353E;
+
+
+// -------------------------
+// Grey Colour
+$color-white:							#FFFFFF;
+
+$color-grey-a:							#FFFFFF;
+$color-grey-b:							#F2F2F2;
+$color-grey-c:							#EEEEEE; //Body Background
+$color-grey-d:							#DDDDDD;
+$color-grey-e:							#CCCCCC;
+$color-grey-f:							#AAAAAA;
+$color-grey-g:							#808080;
+$color-grey-h:							#606060; //Body text default
+$color-grey-i:							#404040;
+$color-grey-j:							#3A3A3A;
+$color-grey-k:							#202020;
+
+$color-black:							#000000;
+
+
+// -------------------------
+// Links
+$text-link:								#0EA6C6;
+$text-hover:							#007b9e;
+
+
+
+// -------------------------
+// Display property
+$block:									block;
+$iblock:								inline-block;
+
+
+// Font font-size
+$font-size-xxs: 						11px;
+$font-size-xs: 							12px;
+$font-size-sm: 							13px;
+$font-size-md: 							14px;
+$font-size-ml: 							15px;
+$font-size-lg: 							16px;
+$font-size-xl: 							18px;
+$font-size-xxl: 						20px;
+$font-size-xxxl: 						24px;
+
+$font-size-h1:							36px;
+
+$font-size-h2:							28px;
+
+$font-size-h3:							24px;
+
+$font-size-h4:							18px;
+
+$font-size-h5:							16px;
+
+$font-size-h6:							14px;
+
+
+// Line Height
+$line-height-nospace: 					1;
+$line-height-ex-narrow: 				1.14285714;
+$line-height-narrow: 					1.28571428;
+$line-height-base: 						1.42857143;
+$line-height-wide: 						1.57142857;
+$line-height-ex-wide: 					1.71428571;
+
+
+// Font Weight
+$font-weight: 							400;
+$font-weight-light: 					300;
+$font-weight-medium: 					500;
+$font-weight-bold: 						700;
+$font-weight-black: 					900;

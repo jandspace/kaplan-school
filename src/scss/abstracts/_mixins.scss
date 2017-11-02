@@ -1,0 +1,475 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// mixin for bullet proof font declaration syntax
+
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url(font-path('#{$font-filename}.eot'));
+		src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
+		url(font-path('#{$font-filename}.woff')) format('woff'),
+		url(font-path('#{$font-filename}.ttf')) format('truetype'),
+		url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg');
+		font-weight: $font-weight;
+		font-style: $font-style;
+		font-stretch: $font-stretch;
+	}
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	Viewport sized typography with minimum and maximum values
+	// 	
+	// 	@author Eduardo Boucas (@eduardoboucas)
+	// 	
+	// 	@param {Number}   $responsive  - Viewport-based size
+	// 	@param {Number}   $min         - Minimum font size (px)
+	// 	@param {Number}   $max         - Maximum font size (px)
+	// 	                                 (optional)
+	// 	@param {Number}   $fallback    - Fallback for viewport-
+	// 	                                 based units (optional)
+	// 	
+	// 	@example scss - 5vw font size (with 50px fallback), 
+	// 	                minumum of 35px and maximum of 150px
+	// 	@include responsive-font(5vw, 35px, 150px, 50px);
+	// 	
+	// -----------------------------------------------------------------------------
+
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+	$responsive-unitless: $responsive / ($responsive - $responsive + 1);
+	$dimension: if(unit($responsive) == 'vh', 'height', 'width');
+	$min-breakpoint: $min / $responsive-unitless * 100;
+
+	@media (max-#{$dimension}: #{$min-breakpoint}) {
+		font-size: $min;
+	}
+  
+	@if $max {
+		$max-breakpoint: $max / $responsive-unitless * 100;
+
+		@media (min-#{$dimension}: #{$max-breakpoint}) {
+			font-size: $max;
+		}
+	}
+  
+	@if $fallback {
+		font-size: $fallback;
+	}
+
+	font-size: $responsive;
+}
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.no-limits {
+	// 		font-size: 3vw;
+	// 	}
+	// 	.limit-min {
+	// 		@include responsive-font(3vw, 20px);
+	// 	}
+	// 	.limit-min-max {
+	// 		@include responsive-font(3vw, 20px, 50px);
+	// 	}
+	// 	
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Font Rendering
+//
+
+@mixin font-smoothing($value: on) {
+	@if $value == on {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	@else {
+		-webkit-font-smoothing: subpixel-antialiased;
+		-moz-osx-font-smoothing: auto;
+	}
+}
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.text-on-dark {
+	// 		@include font-smoothing(on);
+	// 	}
+	// 	.text-on-light {
+	// 		@include font-smoothing(off);
+	// 	}
+	// 	
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Opacity
+//
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
+}
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.element {
+	// 		@include opacity(0.8);
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Transitions
+//
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.animation {
+	// 		@include transition(all .3s ease);
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Generic Transform
+//
+
+// 1. Generic transform
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+// 2. Rotate
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+ 
+// 3. Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+} 
+// 4. Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+// 5. Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+// 6. Transform origin
+@mixin transform-origin ($origin) {
+	moz-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.shape {
+	// 		@include transform( rotate(45deg) scale(10) skew(20deg, 10deg));
+	// 		@include transform-origin(top left);
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Clearfix
+//
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.element {
+	// 		@include clearfix;
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Border Radius
+//
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+@mixin border-top-radius($radius) {
+	-webkit-border-top-right-radius: $radius;
+	border-top-right-radius: $radius;
+	-webkit-border-top-left-radius: $radius;
+	border-top-left-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+	-webkit-border-top-right-radius: $radius;
+	border-top-right-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+	-webkit-border-bottom-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+	-webkit-border-top-left-radius: $radius;
+	border-top-left-radius: $radius;
+	background-clip: padding-box;
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.button {
+	// 		@include border-radius(5px);
+	// 	}
+	// 	.submit-button {
+	// 		@include border-top-radius(10px);
+	// 		@include border-right-radius(8px);
+	// 		@include border-bottom-radius(10px);
+	// 		@include border-left-radius (6px);
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Box Shadow
+//
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+	-webkit-box-shadow:$top $left $blur $color #{$inset};
+	-moz-box-shadow:$top $left $blur $color #{$inset};
+	box-shadow:$top $left $blur $color #{$inset};
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.boxshadow {
+	// 		@include box-shadow(0px, 3px, 7px, 0px, rgba(0, 0, 0, 0.5));
+	// 	}
+	// 	.boxshadow-inset {
+	// 		@include box-shadow(inset, 0, 5px, 15px, rgba(0, 0, 0, 0.5));
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Absolute Positioned
+//
+
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	position: absolute;
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.absolute {
+	// 		@include abs-pos(10px, 10px, 5px, 15px);
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Text Ellipsis : Multiline
+//
+
+@mixin ellipsis ($max-height, $lines: 2) {
+	overflow: hidden;
+	max-height: $max-height;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lines;
+	text-overflow: -o-ellipsis-lastline;
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.ellipsis-multiline {
+	// 		@include ellipsis(60px, 3);
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Text Ellipsis : Singleline
+//
+
+@mixin truncateText($overflow: ellipsis){
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: $overflow;
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.ellipsis-singleline {
+	// 		@include truncateText;
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Responsive Box Ratio
+//
+
+@mixin aspect-ratio($ratio-or-width, $height: null) {
+	$padding: if($height, percentage($height/$ratio-or-width), percentage(1/$ratio-or-width));
+	&:before { content:''; float: left; padding-bottom: $padding;  }
+	&:after  { content:''; display: table; clear: both;  }
+	position: relative;
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.ratio-box {
+	// 		@include aspect-ratio(16,9);
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Centering Mixin
+//
+@mixin center($horizontal: true, $vertical: true) {
+	position: absolute;
+
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} @else if ($horizontal) {
+		left: 50%;
+		transform: translate(-50%, 0);
+	} @else if ($vertical) {
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.parent {
+	// 		position: relative;
+	// 	}
+	// 	.child {
+	// 		&.both { @include center; }
+	// 		&.horizontal { @include center(true, false); }
+	// 		&.vertical { @include center(false, true); }
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Button Hover & Active Mixin
+//
+@mixin button-hover-active($bg-color) {
+	background-color: $bg-color;
+	&:hover {
+		color: $color-grey-a;
+		background-color: darken($bg-color,20%);
+	}
+	&:active {
+		color: $color-grey-a;
+		background-color: darken($bg-color,40%);
+	}
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	.button {
+	// 		@include button-hover-active($color-secondary-skyblue);
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// List style Mixin
+//
+@mixin basic-list {
+	margin: 0 0 1em 0; padding: 0; list-style: none;
+	li { float: none; text-align: left; padding: 0 0 6px 20px; position: relative;
+		&:before { content: '•'; position: absolute; left: 2px; }
+	}
+}
+@mixin horizontal-list {
+	margin: 0; padding: 0; list-style: none;
+	li { float: left; padding: inherit; text-align: left;  
+		&:before { content: none; }
+	}
+}
+@mixin vertical-list {
+	margin: 0; padding: 0; list-style: none;
+	li { float: none; padding: inherit; text-align: inherit; 
+		&:before { content: none; }
+	}
+}
+
+	// -----------------------------------------------------------------------------
+	// 	Example Usage
+	//
+	// 	ul.list {
+	// 		@include basic-list;
+	// 	}
+	//
+	// -----------------------------------------------------------------------------
+
+

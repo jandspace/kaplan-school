@@ -1,0 +1,99 @@
+/* -----------------------------------------------------------------------------
+	BASE for New School Page
+----------------------------------------------------------------------------- */
+.title-container,
+.table-of-contents-container {
+	display: none;
+}
+
+.node-school {
+	&.view-mode-full {
+		padding: 0 15px;
+		margin: 0;
+
+		.ds-row {
+			padding: 0;
+			margin: 0;
+		}
+
+		.nopadding {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		
+	}
+
+	.row-eq-height {
+		display: flex;
+		flex-wrap: wrap;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}	
+
+	.field-item {
+		.section-content {
+			border-top: 1px solid rgba(0,0,0,0.05);
+			border-width: 1px 0 0;
+			border-style: solid;
+			-webkit-border-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, 0))) 2%;
+			-webkit-border-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, 0) 100%) 2%;
+			-o-border-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, 0) 100%) 2%;
+			border-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, 0))) 2%;
+			border-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, 0) 100%) 2%;
+
+			@media #{$xs-max} {
+				padding: 30px 0;
+			}
+			@media #{$sm-min} {
+				padding: 5% 0;
+			}
+
+			&.hero-wrap, &.overview-wrap {
+				border: none;
+			}
+
+			p,
+			ul,
+			ol {
+				margin-bottom: 1.2em;
+			}
+			li {
+				padding-right: 0;
+				margin-bottom: 0.4em;
+			}
+
+			h2,
+			h3,
+			h4,
+			h5 {
+				line-height: 1.1em;
+			}
+
+			.section-head {
+				text-align: center;
+				padding-bottom: 10px;
+
+				h2.title {
+					color: #202020;
+					font-weight: 700;
+					text-transform: uppercase;
+					text-align: center;
+					margin-bottom: 0.5em;
+					font-size: 24px;
+					@media #{$sm-min} { font-size: 26px; }
+					@media #{$md-min} { font-size: 28px; }
+					@media #{$lg-min} { font-size: 32px; }
+				}
+
+				.desc {
+					max-width: 860px;
+					margin-left: auto;
+					margin-right: auto;
+					font-size: 14px;
+					@media #{$sm-min} { font-size: 16px; }
+					@media #{$md-min} { font-size: 18px; }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+
+// 1. ABSTRACT
+@import
+  'abstracts/variables', 
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. BASE STUFF
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/button';
+
+// 3. COMPONENTS
+@import
+  // Sections
+  'components/sch-base',  // BASE
+  'components/sch-hero',  // First row : HERO
+  'components/sch-overview', // Second row : OVERVIEW
+  'components/sch-location', // Third row : LOCATION
+  'components/sch-available-course', // Fourth row : AVAILABLE COURSES
+  'components/sch-info', // Fifth row : SCHOOL INFORMATION
+  'components/sch-student', // Sixth row : STUDENTS IN THE SCHOOL
+  'components/sch-life', // Seventh row : LIFE AROUND THE SCHOOL
+  'components/sch-accommodation', // Eighth row : ACCOMMODATION
+
+  // override
+  'components/override';
+
