@@ -656,6 +656,8 @@ a.btn-slide {
   .node-school .field-item .section-content h4,
   .node-school .field-item .section-content h5 {
     line-height: 1.1em; }
+  .node-school .field-item .section-content .btn {
+    background-color: #007DB3; }
   .node-school .field-item .section-content .section-head {
     text-align: center;
     padding-bottom: 10px; }
@@ -686,6 +688,9 @@ a.btn-slide {
       @media only screen and (min-width: 992px) {
         .node-school .field-item .section-content .section-head .desc {
           font-size: 18px; } }
+  @media only screen and (min-width: 768px) {
+    .node-school .field-item .section-content .section-body .collapsible-item {
+      display: block; } }
 
 .node-school .field-item .hero-wrap {
   padding-top: 0;
@@ -801,31 +806,37 @@ a.btn-slide {
         .node-school .field-item .section-content .hero .hero-item-container .hero-text h3.best-for {
           font-size: 24px;
           padding: 0 12%; } }
-    .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.main-cta-ani {
+    .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.hero-btn {
       position: relative;
       z-index: 1;
       font-size: 14px !important;
       color: #FFFFFF;
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 600;
       line-height: 1.1;
+      margin: 0.25em;
       padding: 1.1em 1em;
-      min-width: 260px;
+      min-width: 220px;
       overflow: hidden;
-      white-space: nowrap;
-      border: 1px solid transparent;
-      background-color: #007DB3;
-      background: linear-gradient(270deg, transparent, transparent, #007DB3, transparent, transparent);
-      background: linear-gradient(270deg, #007DB3, #007DB3, #00E4FF, #007DB3, #007DB3);
-      background-size: 1000% 1000%;
-      animation: SchoolCtaAni 6s ease infinite;
-      /* Gradient Animation */ }
+      white-space: nowrap; }
+      .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.hero-btn.primary {
+        background-color: #007DB3;
+        border: 1px solid transparent; }
+      .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.hero-btn.secondary {
+        background-color: transparent;
+        border: 1px solid #FFFFFF; }
+      .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.hero-btn.main-cta-ani {
+        background: linear-gradient(270deg, transparent, transparent, #007DB3, transparent, transparent);
+        background: linear-gradient(270deg, #007DB3, #007DB3, #00E4FF, #007DB3, #007DB3);
+        background-size: 1000% 1000%;
+        animation: SchoolCtaAni 6s ease infinite;
+        /* Gradient Animation */ }
 @keyframes SchoolCtaAni {
   0% {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-      .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.main-cta-ani:before {
+      .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.hero-btn:before {
         content: '';
         position: absolute;
         z-index: -1;
@@ -836,11 +847,11 @@ a.btn-slide {
         background-color: #240F6E;
         transition: width .3s; }
       @media only screen and (min-width: 992px) {
-        .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.main-cta-ani {
+        .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.hero-btn {
           font-size: 16px !important; }
-          .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.main-cta-ani:hover {
+          .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.hero-btn:hover {
             border-color: #240F6E; }
-            .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.main-cta-ani:hover:before {
+            .node-school .field-item .section-content .hero .hero-item-container .hero-text .btn.hero-btn:hover:before {
               width: 100%; } }
 .node-school .field-item .section-content .hero .pagenav {
   display: none;
@@ -848,17 +859,17 @@ a.btn-slide {
   @media only screen and (min-width: 992px) {
     .node-school .field-item .section-content .hero .pagenav {
       display: block;
-      border-bottom: 1px solid #DDDDDD; }
+      border-bottom: 1px solid #DDDDDD;
+      text-align: center; }
       .node-school .field-item .section-content .hero .pagenav a {
         position: relative;
         display: inline-block;
-        float: left;
         vertical-align: middle;
         font-weight: 600;
         color: #240F6E;
         text-decoration: none;
         text-transform: uppercase;
-        margin: 0 5px;
+        margin: 0 4px;
         padding: 24px 10px;
         font-size: 13px;
         overflow: hidden; }
@@ -874,16 +885,7 @@ a.btn-slide {
         .node-school .field-item .section-content .hero .pagenav a:hover {
           color: #007DB3; }
           .node-school .field-item .section-content .hero .pagenav a:hover:after {
-            left: 0; }
-        .node-school .field-item .section-content .hero .pagenav a.cta-btn {
-          float: right;
-          color: #FFFFFF;
-          background-color: #007DB3;
-          padding: 14px 20px;
-          border-top: 10px solid #FFFFFF;
-          border-bottom: 10px solid #FFFFFF; }
-          .node-school .field-item .section-content .hero .pagenav a.cta-btn:after {
-            content: none; } }
+            left: 0; } }
 
 .node-school .field-item .overview-wrap {
   background: #f0f0f0;
@@ -931,14 +933,24 @@ a.btn-slide {
         @media only screen and (min-width: 992px) {
           .node-school .field-item .location-wrap .location .section-body .item.text-container {
             width: 44%; } }
-        @media only screen and (min-width: 992px) {
+        @media only screen and (min-width: 1200px) {
           .node-school .field-item .location-wrap .location .section-body .item.text-container {
             width: 38%; } }
         .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner {
           display: inline-block;
-          padding: 15px;
-          min-width: 290px;
+          padding: 30px;
+          width: 100%;
           text-align: left; }
+          @media only screen and (max-width: 767px) {
+            .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner {
+              padding-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner {
+              width: auto;
+              min-width: 290px; } }
+          @media only screen and (min-width: 992px) {
+            .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner {
+              padding: 15px; } }
           .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .title {
             margin: 0 0 0.5em 0;
             padding: 0 0 0.5em 0;
@@ -951,27 +963,153 @@ a.btn-slide {
             padding: 0;
             width: 100%;
             color: #FFFFFF; }
+            .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .desc .school-contact {
+              margin-top: 1em; }
+              .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .desc .school-contact a {
+                font-size: 12px;
+                color: #FFC82E;
+                text-transform: uppercase; }
       .node-school .field-item .location-wrap .location .section-body .item.map-container {
         position: relative;
-        min-height: 280px; }
+        padding-bottom: 30px; }
         @media only screen and (min-width: 768px) {
           .node-school .field-item .location-wrap .location .section-body .item.map-container {
             width: 50%;
-            min-height: 280px; } }
+            padding: 0; } }
         @media only screen and (min-width: 992px) {
           .node-school .field-item .location-wrap .location .section-body .item.map-container {
-            width: 56%;
-            min-height: 320px; } }
+            width: 56%; } }
         @media only screen and (min-width: 992px) {
           .node-school .field-item .location-wrap .location .section-body .item.map-container {
-            width: 62%;
-            min-height: 380px; } }
+            width: 62%; } }
+        .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item {
+          position: relative; }
+          .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item.in {
+            height: 380px; }
+            @media only screen and (min-width: 768px) {
+              .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item.in {
+                height: none; } }
+          @media only screen and (min-width: 768px) {
+            .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item {
+              min-height: 300px; } }
+          @media only screen and (min-width: 992px) {
+            .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item {
+              min-height: 320px; } }
+          @media only screen and (min-width: 992px) {
+            .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item {
+              min-height: 380px; } }
         .node-school .field-item .location-wrap .location .section-body .item.map-container iframe {
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          padding: 0 30px; }
+          @media only screen and (min-width: 768px) {
+            .node-school .field-item .location-wrap .location .section-body .item.map-container iframe {
+              padding: 0; } }
+        .node-school .field-item .location-wrap .location .section-body .item.map-container .map-trigger {
+          padding: 10px 30px; }
+          .node-school .field-item .location-wrap .location .section-body .item.map-container .map-trigger a {
+            font-size: 12px;
+            color: #FFC82E;
+            text-transform: uppercase; }
+
+.node-school .field-item .course-wrap {
+  background: #EEEEEE;
+  padding-bottom: 0; }
+  .node-school .field-item .course-wrap .course .section-body .flex-items {
+    margin-left: -15px;
+    margin-right: -15px; }
+    .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item {
+      display: block;
+      position: relative;
+      text-align: center;
+      padding: 15px; }
+      .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner {
+        position: relative;
+        height: 100%;
+        padding: 7%;
+        padding-bottom: 80px;
+        text-align: left;
+        background-color: #FFFFFF;
+        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025); }
+        .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .title {
+          vertical-align: middle;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 1.1em;
+          margin-bottom: 0.25em;
+          text-transform: uppercase;
+          color: #202020;
+          overflow: hidden; }
+        .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .desc {
+          clear: both;
+          padding-top: 12px; }
+        .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .btn-container {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          padding: 15px; }
+          .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .btn-container .btn {
+            width: 100%;
+            font-size: 13px;
+            background-color: transparent;
+            border: 1px solid #007DB3;
+            color: #007DB3; }
+            .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .btn-container .btn:hover {
+              color: #FFFFFF;
+              border: 1px solid #240F6E; }
+  .node-school .field-item .course-wrap .course .section-body .student_testimonial {
+    z-index: 1;
+    margin-top: 4%; }
+    .node-school .field-item .course-wrap .course .section-body .student_testimonial:before, .node-school .field-item .course-wrap .course .section-body .student_testimonial:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      z-index: -1; }
+    .node-school .field-item .course-wrap .course .section-body .student_testimonial:before {
+      background-color: #EEEEEE;
+      top: 0; }
+    .node-school .field-item .course-wrap .course .section-body .student_testimonial:after {
+      background-color: #FFFFFF;
+      bottom: 0; }
+    .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item {
+      padding: 4%;
+      background-image: url(http://stge-assetlibs.kaplaninternational.com/kidrupal/www/en/course/testimonial-bg.jpg);
+      color: #FFFFFF;
+      font-size: 16px;
+      font-style: italic; }
+      .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item .image {
+        float: left;
+        width: 80px;
+        height: 80px;
+        margin: 0 20px 0 0;
+        border-radius: 50%;
+        overflow: hidden; }
+        @media only screen and (min-width: 992px) {
+          .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item .image {
+            width: 92px;
+            height: 92px; } }
+        .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item .image img {
+          width: 100%; }
+      .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item .desc {
+        overflow: hidden; }
+        .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item .desc .testimonial {
+          font-style: italic; }
+        .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item .desc hr {
+          width: 60px;
+          margin: 10px auto 10px 0;
+          border-color: rgba(255, 255, 255, 0.5); }
+        .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item .desc .name {
+          position: relative;
+          font-size: 13px;
+          text-transform: uppercase; }
+        .node-school .field-item .course-wrap .course .section-body .student_testimonial .testimonial-item .desc .school {
+          font-size: 12px; }
 
 
 

@@ -152,39 +152,50 @@
 						}
 
 						.btn {
-							&.main-cta-ani {
+							&.hero-btn {
 								position: relative;
 								z-index: 1;
 								font-size: 14px !important;
 								color: #FFFFFF;
 								text-transform: uppercase;
-								font-weight: 800;
+								font-weight: 600;
 								line-height: 1.1;
+								margin: 0.25em;
 								padding: 1.1em 1em;
-								min-width: 260px;
+								min-width: 220px;
 								overflow: hidden;
 								white-space: nowrap;
-								border: 1px solid transparent;
-								background-color: #007DB3;
-								background: linear-gradient(270deg, transparent, transparent, #007DB3, transparent, transparent);
-								background: linear-gradient(270deg, #007DB3, #007DB3, #00E4FF, #007DB3, #007DB3);
-								background-size: 1000% 1000%;
-								-webkit-animation: SchoolCtaAni 6s ease infinite;
-								-moz-animation: SchoolCtaAni 6s ease infinite;
-								animation: SchoolCtaAni 6s ease infinite;
 
-								/* Gradient Animation */
-								@-webkit-keyframes SchoolCtaAni {
-									0% { background-position:100% 50%; }
-									100% { background-position:0% 50%; }
+								&.primary {
+									background-color: #007DB3;
+									border: 1px solid transparent;
 								}
-								@-moz-keyframes SchoolCtaAni {
-									0% { background-position:100% 50%; }
-									100% { background-position:0% 50%; }
+								&.secondary {
+									background-color: transparent;
+									border: 1px solid #FFFFFF;
 								}
-								@keyframes SchoolCtaAni { 
-									0% { background-position:100% 50%; }
-									100% { background-position:0% 50%; }
+
+								&.main-cta-ani {
+									background: linear-gradient(270deg, transparent, transparent, #007DB3, transparent, transparent);
+									background: linear-gradient(270deg, #007DB3, #007DB3, #00E4FF, #007DB3, #007DB3);
+									background-size: 1000% 1000%;
+									-webkit-animation: SchoolCtaAni 6s ease infinite;
+									-moz-animation: SchoolCtaAni 6s ease infinite;
+									animation: SchoolCtaAni 6s ease infinite;
+
+									/* Gradient Animation */
+									@-webkit-keyframes SchoolCtaAni {
+										0% { background-position:100% 50%; }
+										100% { background-position:0% 50%; }
+									}
+									@-moz-keyframes SchoolCtaAni {
+										0% { background-position:100% 50%; }
+										100% { background-position:0% 50%; }
+									}
+									@keyframes SchoolCtaAni { 
+										0% { background-position:100% 50%; }
+										100% { background-position:0% 50%; }
+									}
 								}
 
 								&:before {
@@ -224,17 +235,18 @@
 					@media #{$md-min} {
 						display: block;
 						border-bottom: 1px solid #DDDDDD;
+						text-align: center;
 
 						a {
 							position: relative;
 							display: inline-block;
-							float: left;
+							// float: left;
 							vertical-align: middle;
 							font-weight: 600;
 							color: #240F6E;
 							text-decoration: none;
 							text-transform: uppercase;
-							margin: 0 5px;
+							margin: 0 4px;
 							padding: 24px 10px;
 							font-size: 13px;
 							overflow: hidden;
@@ -257,17 +269,17 @@
 								}
 							}
 
-							&.cta-btn {
-								float: right;
-								color: #FFFFFF;
-								background-color: #007DB3;
-								padding: 14px 20px;
-								border-top: 10px solid #FFFFFF;
-								border-bottom: 10px solid #FFFFFF;
-								&:after {
-									content: none;
-								}
-							}
+							// &.cta-btn {
+							// 	float: right;
+							// 	color: #FFFFFF;
+							// 	background-color: #007DB3;
+							// 	padding: 14px 20px;
+							// 	border-top: 10px solid #FFFFFF;
+							// 	border-bottom: 10px solid #FFFFFF;
+							// 	&:after {
+							// 		content: none;
+							// 	}
+							// }
 						}
 					}
 				}
