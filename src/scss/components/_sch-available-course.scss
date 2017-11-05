@@ -66,7 +66,11 @@
 
 										&:hover {
 											color: #FFFFFF;
-											border: 1px solid #240F6E;
+											border: 1px solid #007DB3;
+										}
+
+										&:before {
+											background-color: #007DB3;
 										}
 									}
 								}
@@ -74,6 +78,7 @@
 						}
 					}
 
+					// Testimonial
 					.student_testimonial {
 						z-index: 1;
 						margin-top: 4%;
@@ -98,21 +103,31 @@
 
 						.testimonial-item {
 							padding: 4%;
-							// background-color: #503F8B;
+							background-color: #503F8B;
 							background-image: url(http://stge-assetlibs.kaplaninternational.com/kidrupal/www/en/course/testimonial-bg.jpg);
-							color: #FFFFFF;
-							font-size: 16px;
-							font-style: italic;
+							box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+
+							@media #{$xs-max} {
+								padding: 20px;
+								width: auto;
+								margin: 0 -15px;
+							}
 
 							.image {
 								float: left;
-								width: 80px;
-								height: 80px;
-								margin: 0 20px 0 0;
+								width: 60px;
+								height: 60px;
+								margin: 0 10px 0 0;
 								-webkit-border-radius: 50%;
 								-moz-border-radius: 50%;
 								border-radius: 50%;
 								overflow: hidden;
+
+								@media #{$sm-min} {
+									width: 74px;
+									height: 74px;
+									margin: 0 20px 0 0;
+								}
 
 								@media #{$md-min} {
 									width: 92px;
@@ -125,22 +140,38 @@
 							}
 
 							.desc {
+								color: #FFFFFF;
 								overflow: hidden;
 								.testimonial {
+									font-size: 14px;
 									font-style: italic;
+
+									@media #{$md-min} {
+										font-size: 16px;
+									}
 								}
 								hr {
 									width: 60px;
 									margin: 10px auto 10px 0;
 									border-color: rgba(255,255,255,0.5);
 								}
-								.name {
+								.profile {
 									position: relative;
-									font-size: 13px;
-									text-transform: uppercase;
-								}
-								.school {
-									font-size: 12px;
+									.name {
+										font-size: 11px;
+										text-transform: uppercase;
+									}
+									.school {
+										font-size: 11px;
+									}
+									@media #{$sm-min} {
+										.name {
+											font-size: 13px;
+										}
+										.school {
+											font-size: 12px;
+										}
+									}
 								}
 							}							
 						}

@@ -86,6 +86,11 @@
 					@media #{$sm-min} { font-size: 26px; }
 					@media #{$md-min} { font-size: 28px; }
 					@media #{$lg-min} { font-size: 32px; }
+
+					.m-title {
+						display: block;
+						text-align: left;
+					}
 				}
 
 				.desc {

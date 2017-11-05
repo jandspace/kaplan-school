@@ -162,7 +162,8 @@
 								line-height: 1.1;
 								margin: 0.25em;
 								padding: 1.1em 1em;
-								min-width: 220px;
+								width: 100%;
+								max-width: 290px;
 								overflow: hidden;
 								white-space: nowrap;
 
@@ -210,6 +211,10 @@
 									transition: width .3s;
 								}
 
+								@media #{$sm-min} {
+									width: auto;
+									min-width: 220px;
+								}
 								@media #{$md-min} {
 									font-size: 16px !important;
 
