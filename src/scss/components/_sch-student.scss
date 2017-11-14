@@ -1,3 +1,110 @@
 // -----------------------------------------------------------------------------
 // 		Sixth row : STUDENTS IN THE SCHOOL
 // -----------------------------------------------------------------------------
+
+.node-school {
+	.field-item {
+		.students-wrap {
+			background: #EEEEEE;
+			padding-bottom: 0;
+
+			.students {
+				.section-head {
+
+				}
+				.section-body {
+					.flex-items {
+
+						&.figures {
+							.flex-item {
+								text-align: center;
+								padding: 10px 5px;
+								flex: 0 0 33.33333333%;
+								max-width: 33.33333333%;
+
+								@media #{$sm-min} {
+									padding: 15px;
+									flex: 0 0 16.66666666666667%;
+									max-width: 16.66666666666667%;
+								}
+
+								.item-inner {
+
+									.icon-container {
+										font-size: 60px;
+										text-align: center;
+										margin-bottom: 10px;
+										color: #007DB3;
+									}
+									.desc {
+										font-size: 13px;
+										@media #{$sm-min} {
+											font-size: 14px;
+										}
+										.figure {
+											display: block;
+											font-size: 18px;
+											color: #202020;
+										}
+									}
+								}
+							}
+						}
+
+						&.nationalities {
+							justify-content: flex-start;
+
+							.flex-item {
+								text-align: center;
+								flex: 0 0 50%;
+								max-width: 50%;
+								padding-left: 15px;
+								padding-right: 15px;
+
+								@media #{$sm-min} {
+									flex: 0 0 25%;
+									max-width: 25%;
+								}
+								@media #{$md-min} {
+									flex: 0 0 20%;
+									max-width: 20%;
+								}
+								@media #{$lg-min} {
+									flex: 0 0 10%;
+									max-width: 10%;
+								}
+
+								.ls-link {
+									margin: 10px 0;
+									text-align: left;
+									.flag-icon {
+										background-image: url("https://cdn.kaplaninternational.com/profiles/base_drupal_build/modules/kis_language_selector/img/country_sprites.png");
+										margin: 3px 10px 3px 0;
+									}
+									.desc {
+										padding-top: 4px;
+									}
+								}
+
+								@media #{$sm-min} {
+									.ls-link {
+										
+										text-align: center;
+										.flag-icon {
+											float: none;
+											margin: 3px auto;
+										}
+										.desc {
+											display: block;
+											clear: left;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

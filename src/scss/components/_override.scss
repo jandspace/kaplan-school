@@ -4,3 +4,14 @@
 // 		Please do use it rarely
 // -----------------------------------------------------------------------------
 
+// .section-body {
+// 	.collapsible-item {
+// 		display: block !important;
+// 	}
+// }
+
+div {
+	&.course-form {
+		background-color: #E0E0E0;
+	}
+}

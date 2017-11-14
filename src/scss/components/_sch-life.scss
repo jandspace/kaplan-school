@@ -1,3 +1,277 @@
 // -----------------------------------------------------------------------------
 // 		Seventh row : LIFE AROUND THE SCHOOL
 // -----------------------------------------------------------------------------
+
+.node-school {
+	.field-item {
+		.life-wrap {
+			.life {
+				.section-body {
+					@media #{$xs-max} {
+						.collapsible-item {
+							display: block;
+							opacity: 0;
+							display: block;
+							height: 0;
+							overflow: hidden;
+							padding: 0;
+
+							&.collapse.in {
+								opacity: 1;
+								height: auto;
+								overflow: auto;
+								padding: inherit;
+							}
+						}
+					}
+
+					h3.title {
+						font-size: 16px;
+						padding-bottom: 6px;
+						border-bottom: 1px dotted #ccc;
+					}
+
+					.tabs-table {
+						@media #{$md-min} {
+							border-bottom: 1px solid #007DB3;
+						}
+						.panel-group {
+							.panel {
+								.panel-heading {
+									a {
+										padding: 12px 10px;
+										background: #503F8B;
+										&.collapsed {
+											background-color: #EEEEEE;
+											border: none;
+											margin: 2px 0;
+										}
+										&:before {
+											content: "\e612";
+											color: rgba(255,255,255,0.5);
+											transition: all 0.3s ease;
+										}
+										&.collapsed:before {
+											transform: rotate(180deg);
+											color: rgba(0,0,0,0.5);
+										}
+									}
+								}
+								.panel-body {
+									padding: 10px;
+									
+									table {
+										thead {
+											tr {
+												border-bottom: 1px solid #404040;
+												th {
+													font-size: 12px;
+													text-transform: uppercase;
+													&:before {
+														content: none;
+													}
+												}
+											}
+										}
+										th, td {
+											vertical-align: top;
+											font-size: 12px;
+											padding: 5px;
+											-webkit-hyphens: auto;
+											-moz-hyphens: auto;
+											-ms-hyphens: auto;
+											hyphens: auto;
+
+
+										}
+										&.activity-one {
+											td:nth-child(1) {
+												width: 70%;
+											}
+											td:nth-child(2) {
+												width: 30%;
+												text-align: right;
+											}
+											th:nth-child(2) {
+												text-align: right;
+											}
+										}
+										&.activity-two {
+
+											td:nth-child(1) {
+												width: 30%;
+											}
+											td:nth-child(2),
+											td:nth-child(3) {
+												width: 35%;
+											}
+										}
+									}
+
+									.traveltime {
+										.expandable-width {
+											overflow-x: auto;
+											table {
+												min-width: 500px;
+											}
+										}
+									}
+
+									.timetable {
+										.timetable-item {
+											h4.title {
+												font-size: 14px;
+												font-weight: 600;
+												text-align: center;
+												margin: 10px 0;
+											}
+											.row-eq-height {
+												margin-left: 0;
+												margin-right: 0;
+												
+												&.flex-items {
+													margin-bottom: 30px;
+
+													.flex-item {
+														padding: 8px;
+														background-color: #D3CFE2;
+														border: 2px solid #fff;
+													 	color: #404040;
+													 	text-align: center;
+													}
+												}
+											}
+
+											&.class-titmetable {
+												.flex-item {
+													flex: 0 0 33.33333333%;
+													max-width: 33.33333333%;
+												}
+											}
+
+											&.specific-timeclass {
+												.flex-item {
+													flex: 0 0 50%;
+													max-width: 50%;
+												}
+											}
+
+										}
+									}
+								}
+							}
+						}
+
+
+						ul.nav {
+							text-align: center;
+							position: relative;
+							&:before,
+							&:after {
+								content: none;
+							}
+
+							&.nav-tabs {
+								margin: 0;
+								padding: 0;
+								border-bottom: 1px solid #007DB3;
+								justify-content: center;
+								align-items: flex-end;
+								overflow: visible;
+
+								li {
+									position: relative;
+									float: none;
+									margin: 0;
+									padding: 0 3px;
+
+									a {
+										border: none;
+										margin: 0;
+										padding-left: 25px;
+										padding-right: 25px;
+										&:hover {
+											color: #FFFFFF;
+											background-color: #606060;
+										}
+									}
+
+									&.active {
+										&:after {
+											content: " ";
+											position: absolute;
+											height: 0;
+											width: 0;
+											top: 100%;
+											left: 50%;
+											border: solid transparent;
+											pointer-events: none;
+											border-color: rgba(255, 255, 255, 0);
+											border-top-color: #007DB3;
+											border-width: 10px;
+											margin-left: -10px;
+										}
+										a {
+											background-color: #007DB3;
+										}
+									}
+								}
+							}
+							
+						}
+
+						.tab-content {
+							.tab-pane {
+								padding: 3%;
+
+								.timetable {
+									.timetable-item {
+										h4.title {
+											font-size: 14px;
+											font-weight: 600;
+											text-align: center;
+											margin: 10px 0;
+										}
+										.row-eq-height {
+											margin-left: 0;
+											margin-right: 0;
+											
+											&.flex-items {
+												margin-bottom: 30px;
+
+												.flex-item {
+													padding: 8px;
+													background-color: #D3CFE2;
+													border: 2px solid #fff;
+												 	color: #404040;
+												 	text-align: center;
+												}
+											}
+										}
+
+										&.class-titmetable {
+											.flex-item {
+												flex: 0 0 33.33333333%;
+												max-width: 33.33333333%;
+											}
+										}
+
+										&.specific-timeclass {
+											.flex-item {
+												flex: 0 0 50%;
+												max-width: 50%;
+											}
+										}
+
+									}
+								}
+							}
+						}
+
+
+					}
+				}
+			}
+		}
+	}
+}

@@ -34,7 +34,7 @@ gulp.task('styles', function() {
 	sass('src/scss/**/*.scss', { sourcemap: true, style: 'nested' })
     // sass('src/scss/**/*.scss', { sourcemap: true, style: 'compressed' })
 	.on('error', errorLog)
-	.pipe(prefix('last 2 version'))
+	.pipe(prefix('last 4 version'))
     .pipe(sourcemaps.write('.'))
 	.pipe(gulp.dest('dist/css'))
 	.pipe(reload({stream: true}));

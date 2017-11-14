@@ -1,3 +1,79 @@
 // -----------------------------------------------------------------------------
 // 		Eighth row : ACCOMMODATION
 // -----------------------------------------------------------------------------
+
+.node-school {
+	.field-item {
+		.accommodation-wrap {
+			background: #EEEEEE;
+
+			.accommodation {
+				.section-body {
+					.flex-items {
+
+						.flex-item {
+							flex: 0 0 100%;
+							max-width: 100%;
+							padding: 15px;
+							display: flex;
+							align-items: stretch;
+
+							@media #{$sm-min} {
+								flex: 1;
+								max-width: none;
+							}
+
+							.item-inner {
+								flex: 1;
+								background-color: #EEEEEE;
+								position: relative;
+								padding-bottom: 60px;
+								box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
+
+								@media #{$sm-min} {
+									background-color: #FFFFFF;
+								}
+
+								.image {
+									margin-bottom: 1.25em;
+								}
+								.desc {
+									padding-left: 7%;
+									padding-right: 7%;
+
+									h3.title {
+										font-weight: 700;
+										line-height: 1.1em;
+										margin-bottom: 0.25em;
+										text-transform: uppercase;
+										color: #202020;
+										overflow: hidden;
+										font-size: 16px;
+									}
+								}
+								.btn-container {
+									position: absolute;
+									width: 100%;
+									left: 0;
+									bottom: 0;
+									padding: 15px;
+									text-align: center;
+									.btn {
+										width: 100%;
+										font-size: 13px;
+										background-color: transparent;
+										border: 1px solid #007DB3;
+										color: #007DB3;
+										@media #{$sm-min} {
+											max-width: 200px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

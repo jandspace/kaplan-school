@@ -99,7 +99,7 @@
 					.hero-text {
 						text-align: center;
 						color: #FFFFFF;
-						background: url(../images/hero-text-shadow.png) center center no-repeat;
+						background: rgba(0,0,0,0.1) url(../images/hero-text-shadow.png) center center no-repeat;
 						background-size: 100% 100%;
 
 						@media #{$xs-max} {
@@ -273,18 +273,6 @@
 									left: 0;
 								}
 							}
-
-							// &.cta-btn {
-							// 	float: right;
-							// 	color: #FFFFFF;
-							// 	background-color: #007DB3;
-							// 	padding: 14px 20px;
-							// 	border-top: 10px solid #FFFFFF;
-							// 	border-bottom: 10px solid #FFFFFF;
-							// 	&:after {
-							// 		content: none;
-							// 	}
-							// }
 						}
 					}
 				}
@@ -292,68 +280,3 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @media (max-width: 767px) {
-// 	.node-school .hero-text h1.title {
-// 		font-size: 36px;
-// 	}
-// 	.node-school .hero-text h3.strapline {
-		
-// 	}
-// 	.node-school .promo-badge {
-// 		margin: 0 -15px;
-// 		border: 10px solid #FFFFFF;
-// 		-webkit-box-shadow: none;
-// 		-moz-box-shadow: none;
-// 		box-shadow: none;
-// 	}
-// 	.node-school .promo-badge a {
-// 		white-space: normal;
-// 	}
-// }
-// @media (min-width: 768px) {
-// 	.node-school .hero-text h1.title {
-// 		font-size: 48px;
-// 	}
-// 	.node-school .hero-text h3.strapline {
-// 		font-size: 20px;
-// 	}
-// 	.node-school .pagenav a {
-// 		margin: 0 2px;
-// 		padding: 8px 6px;
-// 		font-size: 12px;
-// 	}
-// 	.node-school .pagenav a:hover {
-// 		border-bottom: 3px solid #503F8B;
-// 	}
-// 	.node-school .promo-badge a:hover {
-// 		background: transparent;
-// 		color: #DE950A;
-// 	}
-// }
-// @media (min-width: 992px) {
-// 	.node-school .hero-text h1.title {
-// 		font-size: 56px;
-// 	}
-// 	.node-school .hero-text h3.strapline {
-// 		font-size: 24px;
-// 	}
-// 	.node-school .pagenav a {
-// 		margin: 0 8px;
-// 		padding: 16px 8px;
-// 		font-size: 13px;
-// 	}
-// }

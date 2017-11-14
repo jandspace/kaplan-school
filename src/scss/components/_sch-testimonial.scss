@@ -1,0 +1,111 @@
+// -----------------------------------------------------------------------------
+// 		EXTRA BLOCK - Testimonial
+// -----------------------------------------------------------------------------
+
+// Testimonial
+.node-school {
+	.field-item {
+		.student_testimonial {
+			z-index: 1;
+			margin-top: 4%;
+
+			&:before,
+			&:after {
+				content: " ";
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 50%;
+				z-index: -1;
+			}
+			&:before {
+				background-color: #EEEEEE;
+				top: 0;
+			}
+			&:after {
+				background-color: #FFFFFF;
+				bottom: 0;
+			}
+
+			.testimonial-item {
+				padding: 4%;
+				background-color: #5F4D93;
+				background-image: url(../images/school-testimonial-bg.jpg);
+				background-size: 80%;
+				background-repeat: no-repeat;
+				background-position: right center;
+				box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+
+				@media #{$xs-max} {
+					padding: 20px;
+					width: auto;
+					margin: 0 -15px;
+					background-size: auto 100%;
+					background-position: left center;
+				}
+
+				.image {
+					float: left;
+					width: 60px;
+					height: 60px;
+					margin: 0 10px 0 0;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					border-radius: 50%;
+					overflow: hidden;
+
+					@media #{$sm-min} {
+						width: 74px;
+						height: 74px;
+						margin: 0 20px 0 0;
+					}
+
+					@media #{$md-min} {
+						width: 92px;
+						height: 92px;
+					}
+
+					img {
+						width: 100%;
+					}
+				}
+
+				.desc {
+					color: #FFFFFF;
+					overflow: hidden;
+					.testimonial {
+						font-size: 14px;
+						font-style: italic;
+
+						@media #{$md-min} {
+							font-size: 16px;
+						}
+					}
+					hr {
+						width: 60px;
+						margin: 10px auto 10px 0;
+						border-color: rgba(255,255,255,0.5);
+					}
+					.profile {
+						position: relative;
+						.name {
+							font-size: 11px;
+							text-transform: uppercase;
+						}
+						.school {
+							font-size: 11px;
+						}
+						@media #{$sm-min} {
+							.name {
+								font-size: 13px;
+							}
+							.school {
+								font-size: 12px;
+							}
+						}
+					}
+				}							
+			}
+		}
+	}
+}
