@@ -29,18 +29,22 @@
 						font-size: 16px;
 						padding-bottom: 6px;
 						border-bottom: 1px dotted #ccc;
+						text-transform: uppercase;
+						@media #{$md-min} {
+							font-size: 20px;
+						}
 					}
 
 					.tabs-table {
 						@media #{$md-min} {
-							border-bottom: 1px solid #007DB3;
+							border-bottom: 1px solid #EEEEEE;
 						}
 						.panel-group {
 							.panel {
 								.panel-heading {
 									a {
 										padding: 12px 10px;
-										background: #503F8B;
+										background: #007DB3;
 										&.collapsed {
 											background-color: #EEEEEE;
 											border: none;
@@ -58,7 +62,7 @@
 									}
 								}
 								.panel-body {
-									padding: 10px;
+									padding: 20px 10px 10px 10px;
 									
 									table {
 										thead {
@@ -133,11 +137,18 @@
 													margin-bottom: 30px;
 
 													.flex-item {
-														padding: 8px;
-														background-color: #D3CFE2;
-														border: 2px solid #fff;
-													 	color: #404040;
-													 	text-align: center;
+														padding: 2px;
+														text-align: center;
+
+														.class {
+															padding: 15px 8px;
+															background-color: rgba(0,125,179,0.2);
+															color: #404040;
+														}
+														.break {
+															padding: 15px 8px;
+													 		background-color: #EEEEEE;
+													 	}
 													}
 												}
 											}
@@ -172,12 +183,38 @@
 							}
 
 							&.nav-tabs {
+								position: relative;
 								margin: 0;
 								padding: 0;
-								border-bottom: 1px solid #007DB3;
+								border-bottom: 0;
 								justify-content: center;
 								align-items: flex-end;
 								overflow: visible;
+								z-index: 1;
+
+								&:before,
+								&:after {
+									content: '';
+									position: absolute;
+									display: block;
+									width: 100%;
+									height: 100%;
+								}
+								&:before {
+									z-index: -1;
+									background-color: #FFFFFF;
+									bottom: -1px;
+									height: calc(100% + 1px);
+								}
+								&:after {
+									z-index: -2;
+									width: 75%;
+									height: 25%;
+									left: 15%;
+									bottom: 0;
+									border-radius: 50%;
+									box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.25);
+								}
 
 								li {
 									position: relative;
@@ -224,6 +261,21 @@
 							.tab-pane {
 								padding: 3%;
 
+								table {
+									&.activity-one {
+										th:nth-child(2),
+										td:nth-child(2) {
+											text-align: right;
+										}
+									}
+								}
+
+								.activity-content {
+									@media #{$md-min} {
+										padding: 0 4%;
+									}
+								}
+
 								.timetable {
 									.timetable-item {
 										h4.title {
@@ -240,11 +292,18 @@
 												margin-bottom: 30px;
 
 												.flex-item {
-													padding: 8px;
-													background-color: #D3CFE2;
-													border: 2px solid #fff;
-												 	color: #404040;
-												 	text-align: center;
+													padding: 2px;
+													text-align: center;
+
+													.class {
+														padding: 15px 8px;
+														background-color: rgba(0,125,179,0.2);
+														color: #404040;
+													}
+													.break {
+														padding: 15px 8px;
+												 		background-color: #EEEEEE;
+												 	}
 												}
 											}
 										}

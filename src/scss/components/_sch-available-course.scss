@@ -5,7 +5,7 @@
 .node-school {
 	.field-item {
 		.course-wrap {
-			background: #EEEEEE;
+			background: #F0F0F0;
 			padding-bottom: 0;
 
 			.course {
@@ -40,7 +40,7 @@
 								-webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
 								-moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
 								box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
-								background-color: #EEEEEE;
+								background-color: #F0F0F0;
 
 								@media #{$sm-min} {
 									background-color: #FFFFFF;
@@ -83,10 +83,12 @@
 										border: 1px solid #007DB3;
 										color: #007DB3;
 
-										&:hover {
-											color: #FFFFFF;
-											border: 1px solid #007DB3;
-											background-color: #007DB3;
+										@media #{$sm-min} {
+											&:hover {
+												color: #FFFFFF;
+												border: 1px solid #007DB3;
+												background-color: #007DB3;
+											}
 										}
 									}
 								}

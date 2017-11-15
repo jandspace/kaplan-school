@@ -5,7 +5,7 @@
 .node-school {
 	.field-item {
 		.accommodation-wrap {
-			background: #EEEEEE;
+			background: #F0F0F0;
 
 			.accommodation {
 				.section-body {
@@ -14,18 +14,19 @@
 						.flex-item {
 							flex: 0 0 100%;
 							max-width: 100%;
-							padding: 15px;
+							padding: 5px 15px;
 							display: flex;
 							align-items: stretch;
 
 							@media #{$sm-min} {
-								flex: 1;
-								max-width: none;
+								flex: 0 0 50%;
+								max-width: 50%;
+								padding: 15px;
 							}
 
 							.item-inner {
 								flex: 1;
-								background-color: #EEEEEE;
+								background-color: #F0F0F0;
 								position: relative;
 								padding-bottom: 60px;
 								box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
@@ -42,13 +43,36 @@
 									padding-right: 7%;
 
 									h3.title {
-										font-weight: 700;
 										line-height: 1.1em;
-										margin-bottom: 0.25em;
+										margin-bottom: 0.75em;
 										text-transform: uppercase;
 										color: #202020;
 										overflow: hidden;
+										padding-bottom: 6px;
+										border-bottom: 1px dotted #ccc;
 										font-size: 16px;
+										@media #{$md-min} {
+											font-size: 20px;
+										}
+									}
+
+									ul {
+										list-style: none;
+										li {
+											padding-right: 0;
+											margin-bottom: 0.4em;
+											&:before {
+												content: '●';
+												position: relative;
+												float: left;
+												display: inline-block;
+												height: 0;
+												width: 0;
+												color: #007DB3;
+												top: 0;
+												left: -18px;
+											}
+										}
 									}
 								}
 								.btn-container {
@@ -66,6 +90,12 @@
 										color: #007DB3;
 										@media #{$sm-min} {
 											max-width: 200px;
+
+											&:hover {
+												color: #FFFFFF;
+												border: 1px solid #007DB3;
+												background-color: #007DB3;
+											}
 										}
 									}
 								}
