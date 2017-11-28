@@ -19,13 +19,13 @@
 							.flex-item {
 								text-align: center;
 								padding: 10px 5px;
-								flex: 0 0 33.33333333%;
-								max-width: 33.33333333%;
+								flex: 0 0 50%;
+								max-width: 50%;
 
 								@media #{$sm-min} {
 									padding: 15px;
-									flex: 0 0 16.66666666666667%;
-									max-width: 16.66666666666667%;
+									flex: 0 0 20%;
+									max-width: 20%;
 								}
 
 								.item-inner {
@@ -45,6 +45,7 @@
 											display: block;
 											font-size: 18px;
 											color: #202020;
+											font-weight: 600;
 										}
 									}
 								}
