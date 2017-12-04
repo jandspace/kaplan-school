@@ -24,35 +24,85 @@ $lg-only:	"only screen and (min-width: 1200px) and (max-width: 1599px)";
 $xl-min: 	"only screen and (min-width: 1600px)";
 
 
-// -------------------------
-// Primary Colour
 
-// Primary Colour Blue Gray
-$color-primary:							#232f84;
-
-// Primary Colour Blue Gray - Light
-$color-primary-light:					#414980;
-
-// Primary Colour Blue Gray - Dark
-$color-primary-dark:					#121b60;
 
 
 // -------------------------
-// Secondary Color
+// 1. Primary Colour
 
-// Secondary Color - Kaplan Blue
-$color-secondary-blue:					#0069aa;
-$color-secondary-skyblue:				#00a5d9;
+// KAPLAN PURPLE
+$color-primary:							#240F6E;
 
-// Secondary Color - Other
-$color-secondary-lime:					#c1d82f;
-$color-secondary-orange:				#f47b20;
-$color-secondary-red:					#ed174f;
+// KAPLAN PURPLE LIGHTER
+$color-primary-w80:						#503F8B;
+$color-primary-w60:						#7C6FA8;
+$color-primary-w40:						#A79FC5;
+$color-primary-w20:						#D3CFE2;
+
+// KAPLAN PURPLE DARKER
+$color-primary-b80:						#1D0C58;
+$color-primary-b60:						#160942;
+$color-primary-b40:						#0E062C;
+$color-primary-b20:						#070316;
+
+// KAPLAN PURPLE TRANSPARENT
+$color-primary-t80:						rgba(36,15,110,.8);
+$color-primary-t60:						rgba(36,15,110,.6);
+$color-primary-t40:						rgba(36,15,110,.4);
+$color-primary-t20:						rgba(36,15,110,.2);
+
+
+
 
 
 // -------------------------
-// Neutral Colour
-$color-neutral-a:						#2F353E;
+// 2. Secondary Colour
+
+// Kaplan BlueGreen / DeepBlueGreen / Aqua
+$color-secondary-bluegreen:				#007DB3;
+$color-secondary-deepbluegreen:			#0A5E85;
+$color-secondary-aqa:					#00E4FF;
+
+
+// -------------------------
+// 3. Hightlight/Accent Colour
+
+$color-accent-blue:						#005DE8;
+$color-accent-deepblue:					#082ECF;
+
+$color-accent-red:						#D6083B;
+$color-accent-deepred:					#9E1539;
+
+$color-accent-orange:					#D6083B;
+$color-accent-deeporange:				#9E1539;
+
+$color-accent-green:					#4E9D2D;
+$color-accent-deepgreen:				#35771F;
+
+$color-accent-chatreuse:				#C1D82F;
+$color-accent-deepchatreuse:			#8BA616;
+
+$color-accent-pink:						#E62899;
+$color-accent-deeppink:					#AB0C78;
+
+$color-accent-yellow:					#FFC82E;
+$color-accent-deepyellow:				#C18A24;
+
+
+
+
+
+// -------------------------
+// 4. Neutral Colour
+$color-neutral-warmgrey:				#D7D2CB;
+$color-neutral-deepwarmgrey:			#837870;
+$color-neutral-coolgrey:				#BBBAB9;
+$color-neutral-deepcoolgrey:			#747679;
+$color-neutral-offwhite:				#F5F3E7;
+$color-neutral-wheat:					#EBEB74;
+$color-neutral-stone:					#D4C69E;
+$color-neutral-deepbluegrey:			#2F353E;
+
 
 
 // -------------------------
@@ -60,24 +110,28 @@ $color-neutral-a:						#2F353E;
 $color-white:							#FFFFFF;
 
 $color-grey-a:							#FFFFFF;
-$color-grey-b:							#F2F2F2;
-$color-grey-c:							#EEEEEE; //Body Background
-$color-grey-d:							#DDDDDD;
-$color-grey-e:							#CCCCCC;
-$color-grey-f:							#AAAAAA;
-$color-grey-g:							#808080;
-$color-grey-h:							#606060; //Body text default
-$color-grey-i:							#404040;
-$color-grey-j:							#3A3A3A;
-$color-grey-k:							#202020;
+$color-grey-b:							#F4F4F4;
+$color-grey-c:							#F0F0F0;
+$color-grey-d:							#EEEEEE;
+$color-grey-e:							#DDDDDD;
+$color-grey-f:							#CCCCCC;
+$color-grey-g:							#AAAAAA;
+$color-grey-h:							#808080;
+
+$color-grey-i:							#606060; // Medium
+
+$color-grey-j:							#404040;
+$color-grey-k:							#303030;
+$color-grey-l:							#202020;
 
 $color-black:							#000000;
 
 
 // -------------------------
 // Links
-$text-link:								#0EA6C6;
-$text-hover:							#007b9e;
+$text-link:								#007DB3;
+$text-hover:							#0A5E85;
+$text-link-lighter:						#00E4FF;
 
 
 
@@ -97,18 +151,6 @@ $font-size-lg: 							16px;
 $font-size-xl: 							18px;
 $font-size-xxl: 						20px;
 $font-size-xxxl: 						24px;
-
-$font-size-h1:							36px;
-
-$font-size-h2:							28px;
-
-$font-size-h3:							24px;
-
-$font-size-h4:							18px;
-
-$font-size-h5:							16px;
-
-$font-size-h6:							14px;
 
 
 // Line Height
