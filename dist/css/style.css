@@ -747,6 +747,9 @@ a.btn-slide {
 /* -----------------------------------------------------------------------------
 	BASE for New School Page
 ----------------------------------------------------------------------------- */
+.collapse {
+  display: block; }
+
 .title-container,
 .table-of-contents-container {
   display: none; }
@@ -970,44 +973,6 @@ a.btn-slide {
     .node-school .field-item .section-content .hero .hero-item-container .hero-image * {
       width: 100%;
       height: 100%; }
-    .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item {
-      opacity: 0;
-      transition-property: opacity;
-      transition: all 3s;
-      width: 100%;
-      height: 100%; }
-      @media all and (transform-3d), (-webkit-transform-3d) {
-        .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item.next, .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item.active.right, .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item.prev, .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item.active.left, .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item.next.left, .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item.prev.right, .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item.active {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); } }
-      @media only screen and (min-width: 768px) {
-        .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner > .item .item-bg {
-          -webkit-animation: HeroZoom 25s ease-out;
-          animation: HeroZoom 25s ease-out; }
-        @-webkit-keyframes HeroZoom {
-          0% {
-            -webkit-transform: scale(1, 1); }
-          100% {
-            -webkit-transform: scale(1.5, 1.5); } }
-        @keyframes HeroZoom {
-          0% {
-            -webkit-transform: scale(1, 1);
-                    transform: scale(1, 1); }
-          100% {
-            -webkit-transform: scale(1.5, 1.5);
-                    transform: scale(1.5, 1.5); } } }
-    .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner .active {
-      opacity: 1; }
-    .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner .active.left,
-    .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner .active.right {
-      left: 0;
-      opacity: 0;
-      z-index: 1; }
-    .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner .next.left,
-    .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-inner .prev.right {
-      opacity: 1; }
-    .node-school .field-item .section-content .hero .hero-item-container .hero-image .carousel .carousel-control {
-      z-index: 2; }
   .node-school .field-item .section-content .hero .hero-item-container .hero-text {
     text-align: center;
     color: #FFFFFF;
@@ -1019,13 +984,13 @@ a.btn-slide {
         background: rgba(0, 0, 0, 0.25); } }
     @media only screen and (min-width: 768px) {
       .node-school .field-item .section-content .hero .hero-item-container .hero-text {
-        padding: 12% 0; } }
+        padding: 10% 0; } }
     @media only screen and (min-width: 992px) {
       .node-school .field-item .section-content .hero .hero-item-container .hero-text {
-        padding: 9% 0; } }
+        padding: 7% 0; } }
     @media only screen and (min-width: 1200px) {
       .node-school .field-item .section-content .hero .hero-item-container .hero-text {
-        padding: 8% 0; } }
+        padding: 6% 0; } }
     .node-school .field-item .section-content .hero .hero-item-container .hero-text h1.title {
       text-transform: uppercase;
       font-weight: 800; }
@@ -1052,13 +1017,13 @@ a.btn-slide {
             font-size: 46px; } }
         @media only screen and (min-width: 992px) {
           .node-school .field-item .section-content .hero .hero-item-container .hero-text h1.title .lower {
-            font-size: 50px; } }
+            font-size: 48px; } }
         @media only screen and (min-width: 1200px) {
           .node-school .field-item .section-content .hero .hero-item-container .hero-text h1.title .lower {
-            font-size: 56px; } }
+            font-size: 62px; } }
         @media only screen and (min-width: 1600px) {
           .node-school .field-item .section-content .hero .hero-item-container .hero-text h1.title .lower {
-            font-size: 62px; } }
+            font-size: 68px; } }
     .node-school .field-item .section-content .hero .hero-item-container .hero-text h3.best-for {
       color: #FFFFFF;
       font-weight: 600;
@@ -1261,7 +1226,8 @@ a.btn-slide {
             .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .desc .school-contact a {
               font-size: 12px;
               color: #FFC82E;
-              text-transform: uppercase; }
+              text-transform: uppercase;
+              text-decoration: underline; }
     .node-school .field-item .location-wrap .location .section-body .item.map-container {
       position: relative;
       padding-bottom: 30px;
@@ -1319,7 +1285,8 @@ a.btn-slide {
         .node-school .field-item .location-wrap .location .section-body .item.map-container .map-trigger a {
           font-size: 12px;
           color: #FFC82E;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          text-decoration: underline; }
 
 .node-school .field-item .course-wrap {
   background: #F0F0F0;
@@ -1327,6 +1294,16 @@ a.btn-slide {
   .node-school .field-item .course-wrap .course .section-body .flex-items {
     margin-left: -15px;
     margin-right: -15px; }
+    @media only screen and (min-width: 768px) {
+      .node-school .field-item .course-wrap .course .section-body .flex-items.five-course-types, .node-school .field-item .course-wrap .course .section-body .flex-items.six-course-types {
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .node-school .field-item .course-wrap .course .section-body .flex-items.five-course-types .flex-item, .node-school .field-item .course-wrap .course .section-body .flex-items.six-course-types .flex-item {
+          -webkit-flex: 0 0 33.33333333%;
+              -ms-flex: 0 0 33.33333333%;
+                  flex: 0 0 33.33333333%;
+          max-width: 33.33333333%; } }
     .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1338,7 +1315,9 @@ a.btn-slide {
           -ms-flex: 0 0 100%;
               flex: 0 0 100%;
       max-width: 100%;
-      align-item: stretch; }
+      -webkit-align-self: stretch;
+          -ms-flex-item-align: stretch;
+              align-self: stretch; }
       @media only screen and (min-width: 768px) {
         .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item {
           -webkit-flex: 1;
@@ -1348,8 +1327,9 @@ a.btn-slide {
           padding: 0.75%; } }
       .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner {
         position: relative;
-        padding: 7%;
-        padding-bottom: 80px;
+        width: 100%;
+        padding: 15px;
+        padding-bottom: 70px;
         text-align: left;
         box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
         background-color: #F0F0F0; }
@@ -1357,33 +1337,50 @@ a.btn-slide {
           .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner {
             background-color: #FFFFFF; } }
         .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .icon-container {
-          font-size: 48px;
-          margin-bottom: 10px;
-          color: #606060; }
-        .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .title {
-          vertical-align: middle;
-          font-weight: 700;
-          line-height: 1.1em;
-          margin-bottom: 0.25em;
-          text-transform: uppercase;
-          color: #202020;
+          float: left;
+          font-size: 36px;
+          margin: 0 6px 0 0;
+          color: #404040; }
+          @media only screen and (min-width: 768px) {
+            .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .icon-container {
+              float: none;
+              font-size: 48px; } }
+        .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .text-container {
           overflow: hidden;
-          font-size: 16px; }
-          @media only screen and (min-width: 992px) {
-            .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .title {
-              font-size: 18px; } }
-          @media only screen and (min-width: 1200px) {
-            .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .title {
-              font-size: 20px; } }
-        .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .desc {
-          clear: both;
-          padding-top: 12px; }
+          padding-top: 6px; }
+          .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .text-container .title {
+            vertical-align: middle;
+            font-weight: 700;
+            line-height: 1.1em;
+            margin-bottom: 0.25em;
+            text-transform: uppercase;
+            color: #202020;
+            overflow: hidden;
+            font-size: 16px; }
+            @media only screen and (min-width: 992px) {
+              .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .text-container .title {
+                font-size: 18px; } }
+            @media only screen and (min-width: 1200px) {
+              .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .text-container .title {
+                font-size: 20px; } }
+          .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .text-container .length {
+            font-style: oblique;
+            font-size: 13px; }
+            @media only screen and (min-width: 768px) {
+              .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .text-container .length {
+                font-size: 14px; } }
+          .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .text-container .desc {
+            clear: both;
+            padding-top: 12px; }
         .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .btn-container {
           position: absolute;
           width: 100%;
           left: 0;
           bottom: 0;
           padding: 15px; }
+          @media only screen and (max-width: 767px) {
+            .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .btn-container {
+              padding-left: 57px; } }
           .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .btn-container .btn {
             width: 100%;
             font-size: 13px;
