@@ -747,9 +747,6 @@ a.btn-slide {
 /* -----------------------------------------------------------------------------
 	BASE for New School Page
 ----------------------------------------------------------------------------- */
-.collapse {
-  display: block; }
-
 .title-container,
 .table-of-contents-container {
   display: none; }
@@ -854,13 +851,14 @@ a.btn-slide {
     margin: 4% 15px 2% 15px;
     font-size: 20px;
     text-transform: uppercase;
-    overflow: hidden;
-    text-align: center; }
+    overflow: hidden; }
     @media only screen and (max-width: 767px) {
       .node-school .field-item .section-content .section-body .section-secondary h3.title {
+        text-align: center;
         border-top: 1px dotted #CCCCCC;
-        margin-top: 10px;
-        padding-top: 10px; } }
+        margin: 15px;
+        padding-top: 10px;
+        font-size: 18px; } }
     .node-school .field-item .section-content .section-body .section-secondary h3.title span {
       display: inline-block;
       position: relative; }
@@ -870,7 +868,7 @@ a.btn-slide {
         height: 5px;
         border-bottom: 1px solid #CCCCCC;
         top: 7px;
-        width: 500%; }
+        width: 1000%; }
         @media only screen and (max-width: 767px) {
           .node-school .field-item .section-content .section-body .section-secondary h3.title span:before, .node-school .field-item .section-content .section-body .section-secondary h3.title span:after {
             content: none; } }
@@ -1393,260 +1391,316 @@ a.btn-slide {
                 border: 1px solid #007DB3;
                 background-color: #007DB3; } }
 
-.node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item {
-  text-align: center;
-  padding: 10px 5px;
-  -webkit-flex: 0 0 50%;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  max-width: 50%; }
-  @media only screen and (min-width: 768px) {
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item {
-      padding: 15px;
-      -webkit-flex: 0 0 20%;
-          -ms-flex: 0 0 20%;
-              flex: 0 0 20%;
-      max-width: 20%; } }
-  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .icon-container {
-    font-size: 60px;
+.node-school .field-item .schoolinfo-wrap {
+  border-top: none; }
+  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item {
     text-align: center;
-    margin-bottom: 10px;
-    color: #007DB3; }
-  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .desc {
-    font-size: 13px; }
+    padding: 10px 5px;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
     @media only screen and (min-width: 768px) {
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .desc {
-        font-size: 14px; } }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .desc .figure {
-      display: block;
-      font-size: 18px;
-      color: #202020;
-      font-weight: 600; }
-      @media only screen and (max-width: 767px) {
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .desc .figure {
-          display: block; } }
-.node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities {
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
-  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item {
-    padding: 0 15px;
-    width: 100%; }
-    @media only screen and (min-width: 768px) {
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item {
-        -webkit-flex: 0 0 33.33333333%;
-            -ms-flex: 0 0 33.33333333%;
-                flex: 0 0 33.33333333%;
-        max-width: 33.33333333%; } }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc {
-      margin: 10px 0;
-      color: #404040;
-      font-weight: 700;
-      line-height: 1.25;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-flow: row nowrap;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-flex-wrap: nowrap;
-          -ms-flex-wrap: nowrap;
-              flex-wrap: nowrap;
-      -ms-flex-align: start;
-      -webkit-align-items: flex-start;
-              align-items: flex-start; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc .icon {
-        float: left;
-        color: #007DB3;
-        font-size: 30px;
-        margin-right: 8px;
-        margin-top: -4px; }
-        @media only screen and (max-width: 767px) {
-          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc .icon {
-            font-size: 24px;
-            margin-top: -2px; } }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc.Disabled {
-        font-weight: 400;
-        color: #BBBBBB; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc.Disabled .icon {
-          color: #BBBBBB; }
-    @media only screen and (max-width: 767px) {
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item {
-        width: 100%; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc {
-          margin: 6px 0; } }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.others {
-      -webkit-flex: 0 0 100%;
-          -ms-flex: 0 0 100%;
-              flex: 0 0 100%;
-      max-width: 100%;
-      width: 100%; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.others .desc {
-        margin-top: 2%;
-        display: inline-block; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.others .desc .icon {
-          font-size: 14px;
-          margin: 0;
-          float: none; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.others .desc .other-items {
-          display: block;
-          font-size: 13px;
-          font-weight: 400;
-          padding-top: 10px;
-          padding-left: 18px; }
-.node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item {
-  -webkit-flex: 0 0 100%;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 100%;
-  padding: 0 15px; }
-  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul {
-    list-style: none; }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li {
-      padding-right: 0;
-      margin-bottom: 0.4em; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li:before {
-        content: '●';
-        position: relative;
-        float: left;
-        display: inline-block;
-        height: 0;
-        width: 0;
-        color: #007DB3;
-        top: 0;
-        left: -18px; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li strong {
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item {
+        padding: 15px;
+        -webkit-flex: 0 0 20%;
+            -ms-flex: 0 0 20%;
+                flex: 0 0 20%;
+        max-width: 20%; } }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .icon-container {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #007DB3; }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .desc {
+      font-size: 13px; }
+      @media only screen and (min-width: 768px) {
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .desc {
+          font-size: 14px; } }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .desc .figure {
         display: block;
-        color: #404040;
-        margin-bottom: 0.5em; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li img {
-        margin: 0.5% 1.25%; }
+        font-size: 18px;
+        color: #202020;
+        font-weight: 600; }
         @media only screen and (max-width: 767px) {
-          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li img {
-            max-width: 82px; } }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li img:first-child {
-          margin-left: 0; }
-.node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .view-more {
-  text-align: center; }
-  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .view-more a.btn-more {
-    margin-top: 1em;
-    padding: 6px 18px;
-    text-transform: uppercase;
-    font-weight: 700; }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .view-more a.btn-more:hover {
-      background-color: #EEEEEE;
-      text-decoration: none; }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .view-more a.btn-more span {
-      display: inherit; }
-.node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery {
-  margin-top: 4%; }
-  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0 3px; }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item {
-      position: relative;
-      background-color: #AAAAAA;
-      position: relative;
-      border: 3px solid #FFFFFF;
-      overflow: hidden; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 100%;
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-left {
-      -ms-flex: 0 0 50%;
-      -webkit-flex: 0 0 50%;
-              flex: 0 0 50%;
-      max-width: 50%; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-left .item {
-        position: relative;
-        padding-bottom: 50%; }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-right {
-      background-color: yellow;
-      -ms-flex: 0 0 50%;
-      -webkit-flex: 0 0 50%;
-              flex: 0 0 50%;
-      max-width: 50%;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-      -ms-flex-direction: column;
-      -webkit-flex-direction: column;
-              flex-direction: column;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -ms-flex-pack: distribute;
-      -webkit-justify-content: space-around;
-      justify-content: space-around; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-right .level {
-        display: -ms-flexbox;
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.figures .flex-item .item-inner .desc .figure {
+            display: block; } }
+  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item {
+      padding: 0 15px;
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item {
+          -webkit-flex: 0 0 33.33333333%;
+              -ms-flex: 0 0 33.33333333%;
+                  flex: 0 0 33.33333333%;
+          max-width: 33.33333333%; } }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc {
+        margin: 10px 0;
+        color: #404040;
+        font-weight: 700;
+        line-height: 1.25;
         display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-        -ms-flex-direction: row;
+        -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
         -webkit-flex-direction: row;
+            -ms-flex-direction: row;
                 flex-direction: row;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-pack: distribute;
-        -webkit-justify-content: space-around;
-        justify-content: space-around; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-right .level.upper {
-          background-color: coral;
-          -webkit-flex: 2;
-              -ms-flex: 2;
-                  flex: 2; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-right .level.lower {
-          background-color: green;
-          -webkit-flex: 3;
-              -ms-flex: 3;
-                  flex: 3; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-right .level .item {
-          -webkit-flex: 1;
-              -ms-flex: 1;
-                  flex: 1; }
-  @media only screen and (max-width: 767px) {
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items {
-      padding: 0 2px; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-left,
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-right {
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+                align-items: flex-start; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc .icon {
+          float: left;
+          color: #007DB3;
+          font-size: 30px;
+          margin-right: 8px;
+          margin-top: -4px; }
+          @media only screen and (max-width: 767px) {
+            .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc .icon {
+              font-size: 24px;
+              margin-top: -2px; } }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.Disabled {
+        display: none; }
+      @media only screen and (max-width: 767px) {
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item {
+          width: 100%; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item .desc {
+            margin: 6px 0; } }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.others {
         -webkit-flex: 0 0 100%;
             -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
-        max-width: 100%; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-left .item,
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-right .item {
-          border: 2px solid #FFFFFF;
-          padding: 0; }
-          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-left .item img,
-          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .image-right .item img {
-            position: relative;
-            left: auto;
-            top: auto;
+        max-width: 100%;
+        width: 100%; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.others .desc {
+          margin-top: 2%;
+          display: inline-block; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.others .desc .icon {
+            font-size: 14px;
+            margin: 0;
+            float: none; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.facilities .flex-item.others .desc .other-items {
+            display: block;
+            font-size: 13px;
+            font-weight: 400;
+            padding-top: 10px;
+            padding-left: 18px; }
+  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px; }
+    @media only screen and (min-width: 768px) {
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item.item-left {
+        -webkit-flex: 0 0 65%;
+            -ms-flex: 0 0 65%;
+                flex: 0 0 65%;
+        max-width: 65%; }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item.item-right {
+        -webkit-flex: 0 0 35%;
+            -ms-flex: 0 0 35%;
+                flex: 0 0 35%;
+        max-width: 35%; } }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul {
+      list-style: none; }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li {
+        padding-right: 0;
+        margin-bottom: 0.4em; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li:before {
+          content: '●';
+          position: relative;
+          float: left;
+          display: inline-block;
+          height: 0;
+          width: 0;
+          color: #007DB3;
+          top: 0;
+          left: -18px; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li strong {
+          display: block;
+          color: #404040;
+          margin-bottom: 0.5em; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li img {
+          margin: 0.5% 1.25%; }
+          @media only screen and (max-width: 767px) {
+            .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li img {
+              max-width: 82px; } }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item ul li img:first-child {
+            margin-left: 0; }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item .accreditation {
+      padding: 20px;
+      background-color: #F0F0F0;
+      box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.2); }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item .accreditation h3.title {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 15px 0;
+        text-transform: none; }
+        @media only screen and (max-width: 767px) {
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item .accreditation h3.title {
+            border-top: 0;
+            padding: 0;
+            text-align: left; } }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item .accreditation .accreditation-items .accreditation-logo {
+        display: inline-block;
+        width: 31%;
+        padding: 8px;
+        background-color: #FFFFFF;
+        border: none; }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .flex-items.other-info .flex-item .accreditation p {
+        font-size: 13px; }
+  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .view-more {
+    text-align: center; }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .view-more a.btn-more {
+      margin-top: 1em;
+      padding: 6px 18px;
+      text-transform: uppercase;
+      font-weight: 700; }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .view-more a.btn-more:hover {
+        background-color: #EEEEEE;
+        text-decoration: none; }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .view-more a.btn-more span {
+        display: inherit; }
+  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery {
+    margin-top: 4%;
+    margin-bottom: 4%; }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items {
+      margin-left: 0;
+      margin-right: 0; }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item {
+        -webkit-flex: 0 0 50%;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        max-width: 50%; }
+        @media only screen and (min-width: 768px) {
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item {
+            -webkit-flex: 0 0 25%;
+                -ms-flex: 0 0 25%;
+                    flex: 0 0 25%;
+            max-width: 25%; } }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item a.school-photo {
+          display: block;
+          position: relative; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item a.school-photo:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            -webkit-transform: none;
-            -ms-transform: none;
-            transform: none; } }
+            height: 100%;
+            background-color: rgba(36, 15, 110, 0);
+            transition: all .3s; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item a.school-photo:after {
+            font-family: 'kie';
+            content: "\e92b";
+            position: absolute;
+            top: 100%;
+            left: calc(50% - 24px);
+            width: 48px;
+            height: 48px;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            color: #FFFFFF;
+            transition: all .3s; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item a.school-photo:hover:before {
+            background-color: rgba(36, 15, 110, 0.75); }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item a.school-photo:hover:after {
+            top: calc(50% - 24px); }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item a.school-photo:focus {
+            outline: none; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .image-gallery .image-items .item img {
+          display: block;
+          width: 100% \9;
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+          margin: 0 auto; }
+  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos {
+    background-color: rgba(255, 255, 255, 0.9); }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos.in {
+      height: 100%;
+      display: -ms-flexbox !important;
+      display: -webkit-flex !important;
+      display: flex !important;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog {
+      margin: 0 auto;
+      padding: 30px 0;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+                  -ms-grid-row-align: center;
+              align-self: center; }
+      @media only screen and (min-width: 768px) {
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog {
+          width: 600px; } }
+      @media only screen and (min-width: 992px) {
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog {
+          width: 780px; } }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content {
+        padding: 0;
+        box-shadow: none;
+        background: transparent;
+        border: none; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .close {
+          position: absolute;
+          top: auto;
+          bottom: -34px;
+          left: calc(50% - 12px);
+          padding: 0;
+          font-size: 20px;
+          text-shadow: none;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          text-align: center; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .modal-body {
+          padding: 0; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .carousel-controls {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          margin: 0; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .carousel-controls .carousel-control {
+            width: 20%;
+            height: 100%;
+            min-width: 30px;
+            background: transparent; }
+            .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .carousel-controls .carousel-control.left {
+              background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+              background-repeat: repeat-x; }
+              .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .carousel-controls .carousel-control.left:hover .icon {
+                margin-left: -36px;
+                transition: all .3s; }
+            .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .carousel-controls .carousel-control.right {
+              background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+              background-repeat: repeat-x; }
+              .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .carousel-controls .carousel-control.right:hover .icon {
+                margin-right: -36px;
+                transition: all .3s; }
+            .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .modal-photos .modal-dialog .modal-content .carousel-controls .carousel-control .icon {
+              font-size: 36px;
+              line-height: 36px;
+              margin-top: -18px; }
 
 .node-school .field-item .students-wrap {
-  background: #F0F0F0;
-  padding-bottom: 0; }
+  background: #F0F0F0; }
   .node-school .field-item .students-wrap .students .section-body .flex-items.figures .flex-item {
     text-align: center;
     padding: 10px 5px;
@@ -1872,8 +1926,8 @@ a.btn-slide {
       .node-school .field-item .life-wrap .life .section-body .tabs-table ul.nav.nav-tabs li a {
         border: none;
         margin: 0;
-        padding-left: 25px;
-        padding-right: 25px; }
+        padding-left: 40p;
+        padding-right: 40p; }
         .node-school .field-item .life-wrap .life .section-body .tabs-table ul.nav.nav-tabs li a:hover {
           color: #FFFFFF;
           background-color: #606060; }
@@ -2034,9 +2088,9 @@ a.btn-slide {
     bottom: 0; }
   .node-school .field-item .student_testimonial .testimonial-item {
     padding: 4%;
-    background-color: #5F4D93;
+    background-color: #FFFFFF;
     background-image: url(../images/school-testimonial-bg.jpg);
-    background-size: 80%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: right center;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25); }
@@ -2066,7 +2120,7 @@ a.btn-slide {
       .node-school .field-item .student_testimonial .testimonial-item .image img {
         width: 100%; }
     .node-school .field-item .student_testimonial .testimonial-item .desc {
-      color: #FFFFFF;
+      color: #404040;
       overflow: hidden; }
       .node-school .field-item .student_testimonial .testimonial-item .desc .testimonial {
         font-size: 14px;
@@ -2076,8 +2130,8 @@ a.btn-slide {
             font-size: 16px; } }
       .node-school .field-item .student_testimonial .testimonial-item .desc hr {
         width: 60px;
-        margin: 10px auto 10px 0;
-        border-color: rgba(255, 255, 255, 0.5); }
+        margin: 15px auto 15px 0;
+        border-color: rgba(0, 0, 0, 0.2); }
       .node-school .field-item .student_testimonial .testimonial-item .desc .profile {
         position: relative; }
         .node-school .field-item .student_testimonial .testimonial-item .desc .profile .name {

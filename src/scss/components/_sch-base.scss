@@ -1,9 +1,9 @@
 /* -----------------------------------------------------------------------------
 	BASE for New School Page
 ----------------------------------------------------------------------------- */
-.collapse {
-	display: block;
-}
+// .collapse {
+// 	display: block;
+// }
 .title-container,
 .table-of-contents-container {
 	display: none;
@@ -147,12 +147,13 @@
 						font-size: 20px;
 						text-transform: uppercase;
 						overflow: hidden;
-						text-align: center;
 
 						@media #{$xs-max} {
+							text-align: center;
 							border-top: 1px dotted #CCCCCC;
-							margin-top: 10px;
+							margin: 15px;
 							padding-top: 10px;
+							font-size: 18px;
 						}
 
 						span {
@@ -165,7 +166,7 @@
 								height: 5px;
 								border-bottom: 1px solid #CCCCCC;
 								top: 7px;
-								width: 500%;
+								width: 1000%;
 
 								@media #{$xs-max} {
 									content: none;
