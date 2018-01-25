@@ -38,7 +38,12 @@
 							align-self: stretch;
 
 							@media #{$sm-min} {
-								flex: 1;
+								flex: 0 0 50%;
+								max-width: 50%;
+								padding: 0.75%;
+							}
+							@media #{$md-min} {
+								flex: 1%;
 								max-width: none;
 								padding: 0.75%;
 							}
@@ -94,10 +99,10 @@
 
 									.length {
 										font-style: oblique;
-										font-size: 13px;
+										font-size: 12px;
 
 										@media #{$sm-min} {
-											font-size: 14px;
+											font-size: 13px;
 										}
 
 									}
@@ -105,6 +110,79 @@
 									.desc {
 										clear: both;
 										padding-top: 12px;
+									}
+								}
+
+								.price-items {
+									padding-top: 6px;
+									padding-left: 42px;
+									@media #{$sm-min} {
+										padding-left: 0;
+									}
+									.price-show {
+										font-size: 13px;
+										text-decoration: none;
+										border-bottom: 1px solid #007DB3;
+									}
+									.one-price {
+										ul.course-items {
+											margin-top: 8px;
+											margin-bottom: -1px;
+											li.course-item {
+												border-bottom: none;
+											}
+										}
+									}
+									ul.course-items {
+										margin: 0;
+										padding: 0;
+										list-style: none;
+										li.course-item {
+											position: relative;
+											margin: 0 ;
+											padding: 0;
+											border-bottom: 1px solid #DDDDDD;
+											&:first-child {
+												border-top: 1px solid #DDDDDD;
+											}
+											a {
+												display: block;
+												position: relative;
+												margin: 0 -15px;
+												padding: 6px 35px 6px 15px;
+												font-size: 13px;
+												color: #404040;
+												text-decoration: none;
+												
+												&:after {
+													font-family: 'kie';
+													content: "\e9b6";
+													position: absolute;
+													top: 50%;
+													right: 15px;
+													width: 20px;
+													height: 20px;
+													margin-top: -10px;
+													text-align: center;
+												}
+												.coursename {
+													display: block;
+													line-height: 1.1;
+													margin-bottom: 3px;
+												}
+											}
+											&:hover {
+												z-index: 2;
+												transition: all 0.2s ease-out;
+												a {
+													background-color: #007DB3;
+													color: #FFFFFF;
+													&:after {
+														color: #FFFFFF;
+													}
+												}
+											}
+										}
 									}
 								}
 

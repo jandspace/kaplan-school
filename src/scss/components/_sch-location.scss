@@ -49,33 +49,39 @@
 								@media #{$sm-min} {
 									width: auto;
 									min-width: 290px;
+									max-width: 320px;
 								}
 								@media #{$md-min} {
 									padding: 15px;
 								}
 
-								.title {
-									margin: 0 0 0.5em 0;
-									padding: 0 0 0.5em 0;
-									border-bottom: 1px solid rgba(255,255,255,0.1);
-									width: 100%;
-									font-size: 24px;
-									color: #FFFFFF;
-								}
+								.item {
+									&.address {
+										margin-bottom: 2em;
+									}
+									.title {
+										margin: 0 0 0.5em 0;
+										padding: 0 0 0.5em 0;
+										border-bottom: 1px solid rgba(255,255,255,0.1);
+										width: 100%;
+										font-size: 24px;
+										color: #FFFFFF;
+									}
 
-								.desc {
-									margin: 0;
-									padding: 0;
-									width: 100%;
-									color: #FFFFFF;
-
-									.school-contact {
-										margin-top: 1em;
+									.desc {
+										margin: 0;
+										padding: 0;
+										width: 100%;
+										color: #FFFFFF;
 										a {
+											margin-top: 0.25em;
+											display: block;
 											font-size: 12px;
 											color: #FFC82E;
-											text-transform: uppercase;
 											text-decoration: underline;
+										}
+										li {
+											margin-bottom: 0.2em;
 										}
 									}
 								}
@@ -91,17 +97,19 @@
 								flex: 0 0 50%;
 								max-width: 50%;
 								padding: 0;
+								align-self: stretch;
 							}
 							@media #{$md-min} {
 								flex: 0 0 56%;
 								max-width: 56%;
 							}
-							@media #{$md-min} {
+							@media #{$lg-min} {
 								flex: 0 0 62%;
 								max-width: 62%;
 							}
 							.collapsible-item {
 								position: relative;
+								height: 100%;
 								&.in {
 									height: 380px;
 									@media #{$sm-min} {

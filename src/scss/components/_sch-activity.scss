@@ -1,0 +1,504 @@
+// -----------------------------------------------------------------------------
+// 		Seventh row : LIFE AROUND THE SCHOOL
+// -----------------------------------------------------------------------------
+
+.node-school {
+	.field-item {
+		.activity-wrap {
+			.activity {
+				.section-body {
+					.featured {
+						@media #{$xs-max} {
+							padding-left: 10px;
+							padding-right: 10px;
+						}
+						.flex-item {
+							padding: 5px;
+							flex: 0 0 50%;
+							max-width: 50%;
+							@media #{$sm-min} {
+								padding: 15px;
+								flex: 0 0 33.33333333%;
+								max-width: 33.33333333%;
+							}
+
+							.activity-item {
+								position: relative;
+								.image {
+									@include aspect-ratio(16,9);
+									overflow: hidden;
+									.image-inner {
+										position: absolute;
+										width: 100%;
+										height: 100%;
+										img {
+											position: absolute;
+											top: 50%;
+											left: 50%;
+											@include transform( translate(-50%,-50%) );
+										}
+									}
+								}
+								.desc {
+									padding: 2% 0;
+									font-size: 12px;
+									span {
+										&.day-of-week {
+											display: block;
+											position: absolute;
+											top: 0;
+											left: 0;
+											padding: 0 10px 5px 0;
+											font-size: 10px;
+											font-weight: 700;
+											background-color: #FFFFFF;
+											color: #503F8B;
+											text-transform: uppercase;
+										}
+									}
+
+									@media #{$sm-min} {
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 100%;
+										height: 100%;
+										padding: 10px 15px 15px 15px;
+										font-size: 13px;
+										color: #404040;
+										span {
+											display: block;
+											position: absolute;
+											left: 0;
+											&.day-of-week {
+												padding: 0 15px 10px 0;
+												font-size: 12px;	
+											}
+											&.activity-text {
+												bottom: 0;
+												width: 100%;
+												padding: 15px;
+												padding-top: 18%;
+												color: #FFFFFF;
+												@include font-smoothing(off);
+												background: rgba(25,20,43,.1);
+												background: -moz-linear-gradient(top,rgba(25,20,43,0) 0,rgba(25,20,43,.2) 50%,rgba(25,20,43,.75) 75%);
+												background: -webkit-linear-gradient(top,rgba(25,20,43,0) 0,rgba(25,20,43,.2) 50%,rgba(25,20,43,.75) 75%);
+												background: linear-gradient(to bottom,rgba(25,20,43,0) 0,rgba(25,20,43,.2) 50%,rgba(25,20,43,.75) 75%);
+												filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0019142b',endColorstr='#bf19142b',GradientType=0);
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+
+
+
+
+
+
+
+					// .section-secondary {
+					// 	.flex-item {
+					// 		flex: 0 0 100%;
+					// 		max-width: 100%;
+					// 		padding: 0 15px;
+
+					// 		@media #{$sm-min} {
+					// 			&.item-left {
+					// 				flex: 0 0 65%;
+					// 				max-width: 65%;
+					// 			}
+					// 			&.item-right {
+					// 				flex: 0 0 35%;
+					// 				max-width: 35%;
+					// 			}
+								
+					// 		}
+
+					// 		h4.title {
+					// 			margin: 1em 0;
+					// 			font-size: 14px;
+					// 			color: #202020;
+					// 			text-transform: uppercase;
+					// 		}
+					// 		&.schdule {
+					// 			@media #{$md-min} {
+					// 				padding-right: 5%;
+					// 			}
+					// 			.table-wrapper {
+					// 				table {
+					// 					width: 100%;
+					// 					thead {
+					// 						tr {
+					// 							border-bottom: 1px solid #404040;
+					// 							th {
+					// 								padding: 8px 0 2px 0;
+					// 								font-size: 12px;
+					// 								text-transform: uppercase;
+					// 							}
+					// 						}
+					// 					}
+					// 					tbody {
+					// 						tr {
+					// 							td {
+					// 								padding: 8px 4px;
+					// 							}
+					// 						}
+					// 					}
+					// 					th, td {
+					// 						vertical-align: top;
+					// 						font-size: 12px;
+					// 						-webkit-hyphens: auto;
+					// 						-moz-hyphens: auto;
+					// 						-ms-hyphens: auto;
+					// 						hyphens: auto;
+					// 					}
+					// 					@media #{$xs-max} {
+					// 						th:first-child,
+					// 						td:first-child {
+					// 							display: none;
+					// 						}
+					// 					}
+					// 					@media #{$md-min} {
+					// 						tbody {
+					// 							tr {
+					// 								td {
+					// 									font-size: 13px;
+					// 								}
+					// 							}
+					// 						}
+					// 					}
+					// 				}
+					// 			}
+					// 		}
+					// 		&.regular {
+					// 			ul {
+					// 				@media #{$sm-min} {
+					// 					margin-top: 2em;
+					// 				}
+					// 			}
+					// 		}
+					// 	}
+					// }
+
+
+
+
+
+
+
+
+
+					// @media #{$xs-max} {
+					// 	.collapsible-item {
+					// 		display: block;
+					// 		opacity: 0;
+					// 		display: block;
+					// 		height: 0;
+					// 		overflow: hidden;
+					// 		padding: 0;
+
+					// 		&.collapse.in {
+					// 			opacity: 1;
+					// 			height: auto;
+					// 			overflow: auto;
+					// 			padding-top: 15px;
+					// 			padding-bottom: 15px;
+					// 		}
+					// 	}
+					// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					// h3.title {
+					// 	font-size: 16px;
+					// 	padding-bottom: 6px;
+					// 	border-bottom: 1px dotted #ccc;
+					// 	text-transform: uppercase;
+					// 	@media #{$md-min} {
+					// 		font-size: 20px;
+					// 	}
+					// }
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+					// .tabs-table {
+					// 	@media #{$md-min} {
+					// 		border-bottom: 1px solid #EEEEEE;
+					// 	}
+					// 	.panel-group {
+					// 		.panel {
+					// 			.panel-heading {
+					// 				a {
+					// 					padding: 12px 10px;
+					// 					background: #007DB3;
+					// 					&.collapsed {
+					// 						background-color: #EEEEEE;
+					// 						border: none;
+					// 						margin: 2px 0;
+					// 					}
+					// 					&:before {
+					// 						content: "\e612";
+					// 						color: rgba(255,255,255,0.5);
+					// 						transition: all 0.3s ease;
+					// 					}
+					// 					&.collapsed:before {
+					// 						transform: rotate(180deg);
+					// 						color: rgba(0,0,0,0.5);
+					// 					}
+					// 				}
+					// 			}
+					// 			.panel-body {
+					// 				padding: 20px 10px 10px 10px;
+									
+									
+
+					// 				.traveltime {
+					// 					.expandable-width {
+					// 						overflow-x: auto;
+					// 						table {
+					// 							min-width: 500px;
+					// 						}
+					// 					}
+					// 				}
+
+					// 				.timetable {
+					// 					.timetable-item {
+					// 						h4.title {
+					// 							font-size: 14px;
+					// 							font-weight: 600;
+					// 							text-align: center;
+					// 							margin: 10px 0;
+					// 						}
+					// 						.row-eq-height {
+					// 							margin-left: 0;
+					// 							margin-right: 0;
+												
+					// 							&.flex-items {
+					// 								margin-bottom: 30px;
+
+					// 								.flex-item {
+					// 									padding: 2px;
+					// 									text-align: center;
+
+					// 									.class {
+					// 										padding: 15px 8px;
+					// 										background-color: rgba(0,125,179,0.2);
+					// 										color: #404040;
+					// 									}
+					// 									.break {
+					// 										padding: 15px 8px;
+					// 								 		background-color: #EEEEEE;
+					// 								 	}
+					// 								}
+					// 							}
+					// 						}
+
+					// 						&.class-titmetable {
+					// 							.flex-item {
+					// 								flex: 0 0 33.33333333%;
+					// 								max-width: 33.33333333%;
+					// 							}
+					// 						}
+
+					// 						&.specific-timeclass {
+					// 							.flex-item {
+					// 								flex: 0 0 50%;
+					// 								max-width: 50%;
+					// 							}
+					// 						}
+
+					// 					}
+					// 				}
+					// 			}
+					// 		}
+					// 	}
+
+
+					// 	ul {
+					// 		text-align: center;
+					// 		position: relative;
+					// 		&:before,
+					// 		&:after {
+					// 			content: none;
+					// 		}
+
+					// 		&.nav-tabs {
+					// 			position: relative;
+					// 			list-style: none;
+					// 			margin: 0;
+					// 			padding: 0;
+					// 			border-bottom: 0;
+					// 			justify-content: center;
+					// 			align-items: flex-end;
+					// 			overflow: visible;
+					// 			z-index: 1;
+
+					// 			&:before,
+					// 			&:after {
+					// 				content: '';
+					// 				position: absolute;
+					// 				display: block;
+					// 				width: 100%;
+					// 				height: 100%;
+					// 			}
+					// 			&:before {
+					// 				z-index: -1;
+					// 				background-color: #FFFFFF;
+					// 				bottom: -1px;
+					// 				height: calc(100% + 1px);
+					// 			}
+					// 			&:after {
+					// 				z-index: -2;
+					// 				width: 75%;
+					// 				height: 25%;
+					// 				left: 15%;
+					// 				bottom: 0;
+					// 				border-radius: 50%;
+					// 				box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.25);
+					// 			}
+
+					// 			li {
+					// 				position: relative;
+					// 				float: none;
+					// 				margin: 0;
+					// 				padding: 0 3px;
+
+					// 				a {
+					// 					display: block;
+					// 					border: none;
+					// 					margin: 0;
+					// 					padding: 10px 15px;
+					// 					&:hover {
+					// 						color: #FFFFFF;
+					// 						background-color: #606060;
+					// 					}
+					// 				}
+
+					// 				&.active {
+					// 					&:after {
+					// 						content: " ";
+					// 						position: absolute;
+					// 						height: 0;
+					// 						width: 0;
+					// 						top: 100%;
+					// 						left: 50%;
+					// 						border: solid transparent;
+					// 						pointer-events: none;
+					// 						border-color: rgba(255, 255, 255, 0);
+					// 						border-top-color: #007DB3;
+					// 						border-width: 10px;
+					// 						margin-left: -10px;
+					// 					}
+					// 					a {
+					// 						padding: 13px 15px;
+					// 						background-color: #007DB3;
+					// 					}
+					// 				}
+					// 			}
+					// 		}
+							
+					// 	}
+
+					// 	.tab-content {
+					// 		.tab-pane {
+					// 			padding: 3%;
+
+					// 			table {
+					// 				&.activity-one {
+					// 					th:nth-child(2),
+					// 					td:nth-child(2) {
+					// 						text-align: right;
+					// 					}
+					// 				}
+					// 			}
+
+					// 			.activity-content {
+					// 				@media #{$md-min} {
+					// 					padding: 0 4%;
+					// 				}
+					// 			}
+
+					// 			.timetable {
+					// 				.timetable-item {
+					// 					h4.title {
+					// 						font-size: 14px;
+					// 						font-weight: 600;
+					// 						text-align: center;
+					// 						margin: 10px 0;
+					// 					}
+					// 					.row-eq-height {
+					// 						margin-left: 0;
+					// 						margin-right: 0;
+											
+					// 						&.flex-items {
+					// 							margin-bottom: 30px;
+
+					// 							.flex-item {
+					// 								padding: 2px;
+					// 								text-align: center;
+
+					// 								.class {
+					// 									padding: 15px 8px;
+					// 									background-color: rgba(0,125,179,0.2);
+					// 									color: #404040;
+					// 								}
+					// 								.break {
+					// 									padding: 15px 8px;
+					// 							 		background-color: #EEEEEE;
+					// 							 	}
+					// 							}
+					// 						}
+					// 					}
+
+					// 					&.class-titmetable {
+					// 						.flex-item {
+					// 							flex: 0 0 33.33333333%;
+					// 							max-width: 33.33333333%;
+					// 						}
+					// 					}
+
+					// 					&.specific-timeclass {
+					// 						.flex-item {
+					// 							flex: 0 0 50%;
+					// 							max-width: 50%;
+					// 						}
+					// 					}
+
+					// 				}
+					// 			}
+					// 		}
+					// 	}
+					// }
+				}
+			}
+		}
+	}
+}

@@ -115,7 +115,14 @@
 		</link>
 
 	</head>
-	<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-295 node-type-school environment-prod i18n-en language-en language-dir-ltr sticky-toolbar sticky-nav" dir="ltr" id="ng-app" ng-app="kaplan" ng-controller="SchoolPageCtrl">
+	<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-295 node-type-school environment-prod i18n-en language-en language-dir-ltr sticky-toolbar" 
+		dir="ltr"
+		id="ng-app"
+		ng-app="kaplan"
+		ng-controller="SchoolPageCtrl"
+		data-spy="scroll"
+		data-target="#pagenav"
+	>
 		<div class="wrapper" id="wrapper">
 			<div id="skip-link">
 				<a class="element-invisible element-focusable" href="#main-content">
@@ -1224,15 +1231,19 @@
 																</div>
 
 															</div>
-															<div class="pagenav">
+															<div class="pagenav" id="pagenav">
 																<div class="container">
-																	<a class="scroll" href="#Course">Available Courses</a>
-																	<a class="scroll" href="#SchoolInfo">School Information</a>
-																	<a class="scroll" href="#Students">Our Students</a>
-																	<a class="scroll" href="#Life">School Life</a>
-																	<a class="scroll" href="#Accommodation">Accommodation</a>
-																	<a class="scroll" href="#Contact-Form">Contact</a>
-																	<!-- <a class="scroll btn-slide cta-btn" href="#">Get a quote</a> -->
+																	<ul class="nav" data-offset-top="120">
+																		<li><a class="scroll hidden" href="#Hero">Washington D.C.</a></li>
+																		<li><a class="scroll" href="#Overview">Overview</a></li>
+																		<li><a class="scroll" href="#Course">Available Courses</a></li>
+																		<li><a class="scroll" href="#SchoolInfo">School Information</a></li>
+																		<li><a class="scroll" href="#PhotoGallery">Photos</a></li>
+																		<li><a class="scroll" href="#Activity">Activities</a></li>
+																		<li><a class="scroll" href="#Accommodation">Accommodation</a></li>
+																		<li><a class="scroll" href="#Contact-Form">Contact</a></li>
+																		<!-- <a class="scroll btn-slide cta-btn" href="#">Get a quote</a> -->
+																	</ul>
 																</div>
 															</div>
 														</div>
@@ -1259,8 +1270,8 @@
 															</p>
 														</div>
 														<div class="section-body">
-															<div class="row">
-																<div class="col-sm-6 col-sm-push-6">
+															<div class="row-eq-height flex-items">
+																<div class="flex-item">
 																	<div class="video-wrapper">
 																		<div class="video vertical-center-wrapper">
 																			<script async="" charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
@@ -1272,7 +1283,7 @@
 																		</div>
 																	</div>
 																</div>
-																<div class="col-sm-6 col-sm-pull-6">
+																<div class="flex-item">
 																	<div class="feature">
 																		<ul>
 																			<li>Choose the right <a href="/flexible-english-courses">flexible English course</a> for you to allow you the right balance of studying and site seeing</li>
@@ -1282,7 +1293,18 @@
 																			<li>If you want to expand your site seeing beyond Washington, transport links can take you for weekend trips to nearby cities including New York City and Philadelphia</li>
 																			<li>If you want to continue your studies at a US university, Washington D.C students can take advantage of Kaplan’s <a href="/university-placement-service" target="_blank">University Placement Service</a> (UPS) which uses our extensive academic network to help you gain entry to graduate and undergraduate university courses across the country</li>
 																		</ul>
-
+																	</div>
+																	<!-- CTA -->
+																	<div class="cta-container one-button">
+																		<div class="first-level clearfix">
+																			<a class="btn btn-slide scroll" href="#Contact-Form">
+																				<span class="block btn-label">Contact an Advisor</span>
+																				<span class="block btn-sub">For more information</span>
+																			</a>
+																		</div>
+																		<div class="second-level clearfix">
+																			<a href="#" class="text">Download Free Kaplan Brochure</a>
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -1306,21 +1328,29 @@
 														<div class="section-body row-eq-height">
 															<div class="item text-container">
 																<div class="text-inner">
-																	<h2 class="title">
-																		School Location
-																	</h2>
-																	<div class="desc">
-																		<div class="school-name">
-																			Kaplan International English Washington DC
+																	<div class="item address">
+																		<h2 class="title">
+																			School Location
+																		</h2>
+																		<div class="desc">
+																			<div class="school-name">
+																				Kaplan International English Washington DC
+																			</div>
+																			<div class="school-address">
+																				1100 G Street NW, Washington DC, USA, Washington DC 20005
+																			</div>
 																		</div>
-																		<div class="school-address">
-																			1100 G Street NW,<br>
-																			Washington DC,<br>
-																			USA,<br>
-																			Washington DC 20005
-																		</div>
-																		<div class="school-contact">
-																			<a href="#Contact-Form" class="scroll">Contact us for more information</a>
+																	</div>
+																	<div class="item nearme">
+																		<h2 class="title">
+																			What's nearby?
+																		</h2>
+																		<div class="desc">
+																			<ul>
+																				<li>1 minuets walk to City center</li>
+																				<li>1 minuets walk to Cafe/Restaurant</li>
+																				<li>10 minuess by bike to Supermarket</li>
+																			</ul>
 																		</div>
 																	</div>
 																</div>
@@ -1375,6 +1405,47 @@
 																				<div class="length">Flexible, from 2 weeks to a year</div>
 																				<div class="desc">Improve your general English skills in your own time frame</div>
 																			</div>
+																			<div class="price-items">
+																				<div class="one-price">
+																					<ul class="course-items">
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									Intensive English Course
+																								</span>
+																								<span class="price">
+																									<b>USD $1,120</b> (2 weeks)
+																								</span>
+																							</a>
+																						</li>
+																					</ul>
+																				</div>
+																				<div class="more-price collapse" id="Price-Flex">
+																					<ul class="course-items">
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									General English course
+																								</span>
+																								<span class="price">
+																									<b>USD $940</b> (2 weeks)
+																								</span>
+																							</a>
+																						</li>
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									Vacation English course
+																								</span>
+																								<span class="price">
+																									<b>USD $860</b> (2 weeks)
+																								</span>
+																							</a>
+																						</li>
+																					</ul>
+																				</div>
+																				<a class="price-show price-view-toggle" data-toggle="collapse" href="#Price-Flex">More price examples</a>
+																			</div>
 																			<div class="btn-container">
 																				<a href="#" class="btn">Find Out More</a>
 																			</div>
@@ -1389,6 +1460,87 @@
 																				<div class="title">Semester Courses</div>
 																				<div class="length">Minimum 20 weeks</div>
 																				<div class="desc">Semester (5 month) or Academic year courses, Intensive or General</div>
+																			</div>
+																			<div class="price-items">
+																				<div class="one-price">
+																					<ul class="course-items">
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									General Academic Year
+																								</span>
+																								<span class="price">
+																									<b>USD $12,160</b> (32 weeks)
+																								</span>
+																							</a>
+																						</li>
+																					</ul>
+																				</div>
+																				<div class="more-price collapse" id="Price-Seme">
+																					<ul class="course-items">
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									General Academic Year
+																								</span>
+																								<span class="price">
+																									<b>USD $12,160</b> (32 weeks)
+																								</span>
+																							</a>
+																						</li>
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									Intensive Academic Semester - 5 months
+																								</span>
+																								<span class="price">
+																									<b>USD $9,000</b> (20 weeks)
+																								</span>
+																							</a>
+																						</li>
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									Intensive Academic Semester - 6 months
+																								</span>
+																								<span class="price">
+																									<b>USD $10,680</b> (24 weeks)
+																								</span>
+																							</a>
+																						</li>
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									Intensive Academic Year
+																								</span>
+																								<span class="price">
+																									<b>USD $12,960</b> (32 weeks)
+																								</span>
+																							</a>
+																						</li>
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									General Academic Semester - 5 months
+																								</span>
+																								<span class="price">
+																									<b>USD $8,200</b> (20 weeks)
+																								</span>
+																							</a>
+																						</li>
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									General Academic Semester - 6 months
+																								</span>
+																								<span class="price">
+																									<b>USD $9,720</b> (24 weeks)
+																								</span>
+																							</a>
+																						</li>
+																					</ul>
+																				</div>
+																				<a class="price-show price-view-toggle" data-toggle="collapse" href="#Price-Seme">More price examples</a>
 																			</div>
 																			<div class="btn-container">
 																				<a href="#" class="btn">Find Out More</a>
@@ -1405,6 +1557,22 @@
 																				<div class="length">Flexible, from 2 weeks +</div>
 																				<div class="desc">Business English skills will put you ahead of the competition, and make your résumé stand out.</div>
 																			</div>
+																			<div class="price-items">
+																				<div class="one-price">
+																					<ul class="course-items">
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									English For Business
+																								</span>
+																								<span class="price">
+																									<b>USD $1,020</b> (2 weeks)
+																								</span>
+																							</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
 																			<div class="btn-container">
 																				<a href="#" class="btn">Find Out More</a>
 																			</div>
@@ -1419,6 +1587,47 @@
 																				<div class="title">Exam Preparation</div>
 																				<div class="length">2 to 24 weeks (depending on location)</div>
 																				<div class="desc">Courses designed to improve your English and your chances at achieving higher test scores</div>
+																			</div>
+																			<div class="price-items">
+																				<div class="one-price">
+																					<ul class="course-items">
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									TOEFL® Exam Preparation
+																								</span>
+																								<span class="price">
+																									<b>USD $970</b> (2 weeks)
+																								</span>
+																							</a>
+																						</li>
+																					</ul>
+																				</div>
+																				<div class="more-price collapse" id="Price-Exam">
+																					<ul class="course-items">
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									Cambridge Exam Preparation 5 weeks
+																								</span>
+																								<span class="price">
+																									<b>USD $940</b> (5 weeks)
+																								</span>
+																							</a>
+																						</li>
+																						<li class="course-item">
+																							<a href="course-link">
+																								<span class="coursename">
+																									Cambridge Exam Preparation 10 weeks
+																								</span>
+																								<span class="price">
+																									<b>USD $860</b> (10 weeks)
+																								</span>
+																							</a>
+																						</li>
+																					</ul>
+																				</div>
+																				<a class="price-show price-view-toggle" data-toggle="collapse" href="#Price-Exam">More price examples</a>
 																			</div>
 																			<div class="btn-container">
 																				<a href="#" class="btn">Find Out More</a>
@@ -1496,33 +1705,44 @@
 																	<div class="flex-item">
 																		<div class="item-inner">
 																			<div class="icon-container">
-																				<span class="icon icon-school-year-of-found"><!-- Icon --></span>
+																				<span class="icon icon-school-recommendation"><!-- Icon --></span>
 																			</div>
 																			<div class="desc">
-																				School found:
-																				<span class="figure">2008</span>
+																				Recommendation rate:
+																				<span class="figure">96.5%</span>
 																			</div>
 																		</div>
 																	</div>
 																	<div class="flex-item">
 																		<div class="item-inner">
 																			<div class="icon-container">
-																				<span class="icon icon-school-buildings"><!-- Icon --></span>
+																				<span class="icon icon-school-total-students"><!-- Icon --></span>
 																			</div>
 																			<div class="desc">
-																				Number of buildings:
-																				<span class="figure">1</span>
+																				Total students:
+																				<span class="figure">110<sup>+</sup></span>
 																			</div>
 																		</div>
 																	</div>
 																	<div class="flex-item">
 																		<div class="item-inner">
 																			<div class="icon-container">
-																				<span class="icon icon-school-floors"><!-- Icon --></span>
+																				<span class="icon icon-school-nationalities"><!-- Icon --></span>
 																			</div>
 																			<div class="desc">
-																				Number of floors:
-																				<span class="figure">2</span>
+																				Number of nationalities:
+																				<span class="figure">53</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="flex-item">
+																		<div class="item-inner">
+																			<div class="icon-container">
+																				<span class="icon icon-school-student-average-age"><!-- Icon --></span>
+																			</div>
+																			<div class="desc">
+																				Average age:
+																				<span class="figure">22-25</span>
 																			</div>
 																		</div>
 																	</div>
@@ -1532,26 +1752,16 @@
 																				<span class="icon icon-school-classrooms"><!-- Icon --></span>
 																			</div>
 																			<div class="desc">
-																				Number of classrooms:
+																				Number of classroom:
 																				<span class="figure">16</span>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="flex-item">
-																		<div class="item-inner">
-																			<div class="icon-container">
-																				<span class="icon icon-school-computers"><!-- Icon --></span>
-																			</div>
-																			<div class="desc">
-																				Number of computers:
-																				<span class="figure">20</span>
 																			</div>
 																		</div>
 																	</div>
 																</div>
 
-																<!-- School Facilities - Base - - - - - -->
+																<!-- Secondray Sections - - - - - -->
 																<div class="section-secondary">
+																	<!-- School Facilities - Base - - - - - -->
 																	<div class="row-eq-height flex-items facilities showthis">
 																		<h3 class="title">
 																			<span>School Facilities</span>
@@ -1594,7 +1804,7 @@
 																		</div>
 																	</div>
 																	<!-- School Facilities - Expandable - - - - - -->
-																	<div class="collapse MoreFacilities">
+																	<div class="collapse MoreFacilities" id="MoreFacilities">
 																		<!-- School Facilities - Expandable - - - - - -->
 																		<div class="row-eq-height flex-items facilities">
 																			<div class="flex-item Disabled">
@@ -1615,7 +1825,7 @@
 																					<span class="text">Swimming Pool</span>
 																				</div>
 																			</div>
-																			<div class="flex-item Disabled">
+																			<div class="flex-item">
 																				<div class="desc">
 																					<span class="icon icon-school-gym"><!-- Icon --></span>
 																					<span class="text">Gym access</span>
@@ -1645,7 +1855,7 @@
 																					<span class="text">Student lounge / Common room</span>
 																				</div>
 																			</div>
-																			<div class="flex-item Disabled">
+																			<div class="flex-item">
 																				<div class="desc">
 																					<span class="icon icon-school-game-room"><!-- Icon --></span>
 																					<span class="text">Game room</span>
@@ -1675,7 +1885,7 @@
 																					<span class="text">Prayer room</span>
 																				</div>
 																			</div>
-																			<div class="flex-item Disabled">
+																			<div class="flex-item">
 																				<div class="desc">
 																					<span class="icon icon-school-school-bus"><!-- Icon --></span>
 																					<span class="text">School Bus</span>
@@ -1691,279 +1901,13 @@
 																		</div>
 																	</div>
 																	<div class="view-more">
-																		<a href=".MoreFacilities" class="MoreFacilities in btn-more" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
-																			<span>View More +</span>
-																		</a>
+																		<a class="btn-more facility-view-toggle" data-toggle="collapse" href="#MoreFacilities">View more facilities +</a>
 																	</div>
 
-
-
-
-																	<!-- School Other Information - - - - - -->
-																	<div class="row-eq-height flex-items other-info">
-																		<h3 class="title">
-																			<span>Other information</span>
-																		</h3>
-																		<div class="flex-item item-left">
-																			<ul>
-																				<li>
-																					<strong>Language spoken by staff:</strong>
-																					<p>
-																						French, Italian, Russian, Spanish, and other languages
-																					</p>
-																				</li>
-																				<li>
-																					<strong>Teacher Qualification:</strong>
-																					<p>
-																						Bachelor’s (or equivalent) in combination with TESOL, CELTA, TEFL certicate (including practicum) or six months of ESL/EFL teaching experience
-																					</p>
-																				</li>
-																				<li>
-																					<strong>Any extra information??</strong>
-																					<p>
-																						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed tristique ante. Nam convallis leo ipsum, et egestas nisl consequat et. Nulla id sodales orci.
-																					</p>
-																				</li>
-																			</ul>
-																		</div>
-																		<div class="flex-item item-right">
-																			<div class="accreditation">
-																				<h3 class="title">Accreditations and memberships</h3>
-																				<div class="accreditation-items clearfix">
-																					<span class="accreditation-logo">
-																						<img alt="Accreditation - ACCET" src="https://cdn.kaplaninternational.com/sites/default/files/accreditation-us-accet.png">
-																					</span>
-
-																					<!-- <span class="accreditation-logo">
-																						<img alt="Accreditation - British Council" src="https://cdn.kaplaninternational.com/sites/default/files/accreditation-uk-british-council.png">
-																					</span>
-
-																					<span class="accreditation-logo">
-																						<img alt="Accreditation - English UK" src="https://cdn.kaplaninternational.com/sites/default/files/accreditation-uk-english-uk.png">
-																					</span>
-
-																					<span class="accreditation-logo">
-																						<img alt="Accreditation - Private Further Education" src="https://cdn.kaplaninternational.com/sites/default/files/accreditation-uk-private-further-education.png">
-																					</span> -->
-																				</div>
-																				<p>
-																					This Kaplan International English school is accredited by ACCET (Accrediting Council for Continuing Education and Training).
-																				</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-
-<script type="text/javascript">
-function addClass(el, className) {
-	var el = document.querySelectorAll(el);
-	
-	for (i = 0; i < el.length; i++) {
-	  if (el.classList) {
-		el[i].classList.add(className);
-	  } else {
-		el[i].className += ' ' + className;
-	  }
-	}
-}
-
-function removeClass(el, className) {
-	var el = document.querySelectorAll(el);
-	
-	for (i = 0; i < el.length; i++) {
-
-	  if (el[i].classList) {
-		el[i].classList.remove(className);
-	  } else {
-		el[i].className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-	  }
-	}
-}
-</script>
-																
-																<!-- Image Gallery -->
-																<div class="image-gallery fullwidth">
-																	<div class="row-eq-height image-items">
-																		<div class="item">
-																			<a href="#" class="school-photo views-field sch-pho-01" data-toggle="modal" data-target=".modal-school-photo" tabindex="0" onclick="removeClass('.sch-pho-zoom', 'active'); addClass('.sch-pho-zoom01', 'active')">
-																				<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-04.jpg">
-																			</a>
-																		</div>
-																		<div class="item">
-																			<a href="#" class="school-photo views-field sch-pho-02" data-toggle="modal" data-target=".modal-school-photo" tabindex="0" onclick="removeClass('.sch-pho-zoom', 'active'); addClass('.sch-pho-zoom02', 'active')">
-																				<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/school/photos/US_WashingtonDC_School_780x520_38_0.jpg">
-																			</a>
-																		</div>
-																		<div class="item">
-																			<a href="#" class="school-photo views-field sch-pho-03" data-toggle="modal" data-target=".modal-school-photo" tabindex="0" onclick="removeClass('.sch-pho-zoom', 'active'); addClass('.sch-pho-zoom03', 'active')">
-																				<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-02.jpg">
-																			</a>
-																		</div>
-																		<div class="item">
-																			<a href="#" class="school-photo views-field sch-pho-04" data-toggle="modal" data-target=".modal-school-photo" tabindex="0" onclick="removeClass('.sch-pho-zoom', 'active'); addClass('.sch-pho-zoom04', 'active')">
-																				<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-03.jpg">
-																			</a>
-																		</div>
-																	</div>
-
-																	<!-- Image Gallery : MODAL (More Photos) -->
-																	<div class="modal fade modal-photos modal-school-photo" tabindex="-1" role="dialog" aria-hidden="false">
-																		<div class="modal-dialog">
-																			<div class="modal-content">
-																				<button type="button" class="close icon-ki-close" data-dismiss="modal" aria-label="Close"></button>
-																				<div class="modal-body">
-																					<div class="carousel carousel-counter carousel-mini-controls slide views-view-fields" data-interval="false" data-ride="carousel" id="carousel-residence-photos-2292">
-																						<!-- Wrapper for slides -->
-																						<div class="carousel-inner">
-																							<div class="item sch-pho-zoom sch-pho-zoom01 active">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-04.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom sch-pho-zoom02">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/school/photos/US_WashingtonDC_School_780x520_38_0.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom sch-pho-zoom03">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-02.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom sch-pho-zoom04">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-03.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-05.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-06.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-07.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-08.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-09.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-10.jpg">
-																							</div>
-																							<div class="item sch-pho-zoom">
-																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-11.jpg">
-																							</div>
-																						</div>
-																						<div class="carousel-controls">
-																							<a class="left carousel-control" data-slide="prev" href="#carousel-residence-photos-2292">
-																								<span class="icon icon-ki-carousel-left-bold"></span>
-																							</a>
-																							<a class="right carousel-control" data-slide="next" href="#carousel-residence-photos-2292">
-																								<span class="icon icon-ki-carousel-right-bold"></span>
-																							</a>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-
-																
-
-
-
-																<!-- CTA -->
-																<div class="cta-container one-button">
-																	<div class="first-level clearfix">
-																		<a class="btn btn-slide scroll" href="#Contact-Form">
-																			<span class="block btn-label">Contact an Advisor</span>
-																			<span class="block btn-sub">For more information</span>
-																		</a>
-																	</div>
-																	<div class="second-level clearfix">
-																		<a href="#" class="text">Download Free Kaplan Brochure</a>
-																	</div>
-																</div>
-
-															</div>
-														</div>
-													</div>
-												</div>
-												<!-- Section End -->
-											</div>
-										</div>
-									</div>
-								</div>
-<!-- Fifth row : SCHOOL INFORMATION ::: END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<!-- Sixth row : STUDENTS IN THE SCHOOL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-								<div class="ds-row ds-row-6 clearfix">
-									<div class="field field-type-ds clearfix">
-										<div class="field-items">
-											<div class="field-item even">
-												<!-- Section Start -->
-												<div class="section-content fullwidth students-wrap m-collapsible" id="Students">
-													<div class="section-inner container students">
-														<div class="section-head">
-															<h2 class="title">
-																<a data-target="#collapse-Students" href="#Students" class="visible-xs m-title collapsed scroll" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-Students">
-																	Students at this School
-																</a>
-																<span class="base hidden-xs">
-																	Students at this School
-																</span>
-															</h2>
-														</div>
-														<div class="section-body">
-															<div class="collapse collapsible-item" id="collapse-Students">																
-																<!-- School Figures -->
-																<div class="row-eq-height flex-items figures">
-																	<div class="flex-item">
-																		<div class="item-inner">
-																			<div class="icon-container">
-																				<span class="icon icon-school-total-students"><!-- Icon --></span>
-																			</div>
-																			<div class="desc">
-																				Total students:
-																				<span class="figure">110<sup>+</sup></span>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="flex-item">
-																		<div class="item-inner">
-																			<div class="icon-container">
-																				<span class="icon icon-school-students-per-class"><!-- Icon --></span>
-																			</div>
-																			<div class="desc">
-																				Students per class:
-																				<span class="figure">11-15</span>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="flex-item">
-																		<div class="item-inner">
-																			<div class="icon-container">
-																				<span class="icon icon-school-student-average-age"><!-- Icon --></span>
-																			</div>
-																			<div class="desc">
-																				Average age:
-																				<span class="figure">22-25</span>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="flex-item">
-																		<div class="item-inner">
-																			<div class="icon-container">
-																				<span class="icon icon-school-min-student-age"><!-- Icon --></span>
-																			</div>
-																			<div class="desc">
-																				Minimun student age:
-																				<span class="figure">16</span>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-
-																<!-- Nationalities - - - - - -->
-																<div class="section-secondary">
+																	<!-- Student Nationalities - - - - - -->
 																	<div class="row-eq-height flex-items nationalities">
 																		<h3 class="title">
-																			<span>Top 10 Student Nationalities</span>
+																			<span>Student Nationalities</span>
 																		</h3>
 																		<div class="flex-item">
 																			<div class="ls-link saudi-arabia">
@@ -2026,286 +1970,66 @@ function removeClass(el, className) {
 																			</div>
 																		</div>
 																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<!-- Section End -->
-											</div>
-										</div>
-									</div>
-								</div>
-<!-- Sixth row : STUDENTS IN THE SCHOOL ::: END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<!-- Seventh row : LIFE AROUND THE SCHOOL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-								<div class="ds-row ds-row-7 clearfix">
-									<div class="field field-type-ds clearfix">
-										<div class="field-items">
-											<div class="field-item odd">
-												<!-- Section Start -->
-												<div class="section-content fullwidth life-wrap m-collapsible" id="Life">
-													<div class="section-inner container life">
-														<div class="section-head">
-															<h2 class="title">
-																<a data-target="#collapse-Life" href="#Life" class="visible-xs m-title collapsed scroll" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-Life">
-																	Life around this school
-																</a>
-																<span class="base hidden-xs">
-																	Life around this school
-																</span>
-															</h2>
-														</div>
-														<div class="section-body">
-															<div class="collapse collapsible-item" id="collapse-Life">
-																<div class="tabs-table">
-																	<ul class="nav nav-tabs row-eq-height flex-items">
-																		<li class="flex-item active">
-																			<a data-toggle="tab" href="#LifeTab--Activities">
-																				Social Activities
-																			</a>
-																		</li>
-																		<li class="flex-item">
-																			<a data-toggle="tab" href="#LifeTab--TravelTime">
-																				Travel Time
-																			</a>
-																		</li>
-																		<li class="flex-item">
-																			<a data-toggle="tab" href="#LifeTab--Holiday">
-																				Public Holidays
-																			</a>
-																		</li>
-																	</ul>
-																	<div class="tab-content">
-																		<!-- Social Activities -->
-																		<div class="tab-pane fade in active" id="LifeTab--Activities">
-																			<div class="tab-pane-content">
-																				<div class="row">
-																					<div class="col-md-8 col-md-offset-2">
-																						<h3 class="title">Typical 2-week social schedule</h3>
-																						<div class="table-wrapper">
-																							<table class="activity-2weeks">
-																								<thead>
-																									<tr>
-																										<th>Days</th>
-																										<th>Week 1</th>
-																										<th>Week 2</th>
-																									</tr>
-																								</thead>
-																								<tbody>
-																									<tr>
-																										<td>Monday</td>
-																										<td>New student introduction</td>
-																										<td>Visit the Supreme Court</td>
-																									</tr>
-																									<tr>
-																										<td>Tuesday</td>
-																										<td>Georgetown Glow</td>
-																										<td>US Botanic Garden</td>
-																									</tr>
-																									<tr>
-																										<td>Wednesday</td>
-																										<td>Movie day</td>
-																										<td>Hot chocolate bar</td>
-																									</tr>
-																									<tr>
-																										<td>Thursday</td>
-																										<td>Zoolights</td>
-																										<td>Natural History Museum</td>
-																									</tr>
-																									<tr>
-																										<td>Friday</td>
-																										<td>Downtown market</td>
-																										<td>Waterskiing at Alexandria</td>
-																									</tr>
-																									<tr>
-																										<td>Saturday</td>
-																										<td>The National Gallery</td>
-																										<td>Alexandria's market</td>
-																									</tr>
-																								</tbody>
-																							</table>
-																						</div>
-																						<p>
-																							* Number of Social activities per week: 2–5; additional independent activities are available daily
-																						</p>
 
-																						<p>&nbsp;</p>
+																	<!-- School Other Information - - - - - -->
+																	<div class="row-eq-height flex-items other-info">
+																		<h3 class="title">
+																			<span>Other information</span>
+																		</h3>
+																		<div class="flex-item item-left">
+																			<ul>
+																				<li>
+																					<strong>University Placement Service (UPS):</strong>
+																					<p>
+																						Our University Placement Service (UPS) allows you to benefit from our extensive network of partner universities and colleges. Combined with our wealth of experience, we help you gain entry to graduate and undergraduate courses. <a href="https://www.kaplaninternational.com/higher-education/university-placement-service">Learn more →</a>
+																					</p>
+																				</li>
+																				<li>
+																					<strong>Language spoken by staff:</strong>
+																					<p>
+																						French, Italian, Russian, Spanish, and other languages
+																					</p>
+																				</li>
+																				<li>
+																					<strong>Teacher Qualification:</strong>
+																					<p>
+																						Bachelor’s (or equivalent) in combination with TESOL, CELTA, TEFL certicate (including practicum) or six months of ESL/EFL teaching experience
+																					</p>
+																				</li>
+																				<li>
+																					<strong>Any extra information??</strong>
+																					<p>
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed tristique ante. Nam convallis leo ipsum, et egestas nisl consequat et. Nulla id sodales orci.
+																					</p>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="flex-item item-right">
+																			<div class="accreditation">
+																				<h3 class="title">Accreditations and memberships</h3>
+																				<div class="accreditation-items clearfix">
+																					<!--  USA accreditation logos -->
+																					<span class="accreditation-logo">
+																						<img alt="Accreditation - ACCET" src="https://cdn.kaplaninternational.com/sites/default/files/accreditation-us-accet.png">
+																					</span>
 
-																						<h3 class="title">Activity Examples</h3>
-																						<p>
-																							Bowling ($15), Discover Washington DC (Free), Basketball Game ($40), Dinner out with Staff ($40), Evening Soccer ($40), International Potluck (Free), Boxing ($40)
-																						</p>
-																					</div>
+																					<!--  UK accreditation logos -->
+																					<!--
+																					<span class="accreditation-logo">
+																						<img alt="Accreditation - British Council" src="https://cdn.kaplaninternational.com/sites/default/files/accreditation-uk-british-council.png">
+																					</span>
+
+																					<span class="accreditation-logo">
+																						<img alt="Accreditation - English UK" src="https://cdn.kaplaninternational.com/sites/default/files/accreditation-uk-english-uk.png">
+																					</span>
+
+																					<span class="accreditation-logo">
+																						<img alt="Accreditation - Private Further Education" src="https://cdn.kaplaninternational.com/sites/default/files/accreditation-uk-private-further-education.png">
+																					</span> -->
 																				</div>
-																			</div>
-																		</div>
-																		<!-- Travel Time -->
-																		<div class="tab-pane fade" id="LifeTab--TravelTime">
-																			<div class="tab-pane-content traveltime">
-																				<div class="row">
-																					<div class="col-md-8 col-md-offset-2">
-																						<h3 class="title">School location and transport</h3>
-																						<div class="table-wrapper expandable-width">
-																							<table>
-																								<thead>
-																									<tr>
-																										<th>Time to the nearest</th>
-																										<th>By foot</th>
-																										<th>By bike</th>
-																										<th>By bus</th>
-																										<th>By subway/train</th>
-																									</tr>
-																								</thead>
-																								<tbody>
-																									<tr>
-																										<td>Café / restaurant:</td>
-																										<td>1 minute</td>
-																										<td>1 minute</td>
-																										<td>N/A</td>
-																										<td>N/A</td>
-																									</tr>
-																								
-																									<tr>
-																										<td>Supermarket:</td>
-																										<td>35 minutes</td>
-																										<td>10 minutes</td>
-																										<td>15 minutes</td>
-																										<td>10 minutes</td>
-																									</tr>
-																								
-																									<tr>
-																										<td>Post office:</td>
-																										<td>7 minutes</td>
-																										<td>2 minutes</td>
-																										<td>N/A</td>
-																										<td>N/A</td>
-																									</tr>
-																								
-																									<tr>
-																										<td>ATM / bank:</td>
-																										<td>1 minute</td>
-																										<td>N/A</td>
-																										<td>N/A</td>
-																										<td>N/A</td>
-																									</tr>
-																								
-																									<tr>
-																										<td>Sports center:</td>
-																										<td>2 minutes</td>
-																										<td>1 minute</td>
-																										<td>N/A</td>
-																										<td>N/A</td>
-																									</tr>
-																								
-																									<tr>
-																										<td>Hospital:</td>
-																										<td>30 minutes</td>
-																										<td>10 minutes</td>
-																										<td>10 minutes</td>
-																										<td>6 minutes</td>
-																									</tr>
-																								
-																									<tr>
-																										<td>City center:</td>
-																										<td>1 minute</td>
-																										<td>N/A</td>
-																										<td>N/A</td>
-																										<td>N/A</td>
-																									</tr>
-																								</tbody>
-																							</table>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																		<!-- Public Holiday -->
-																		<div class="tab-pane fade" id="LifeTab--Holiday">
-																			<div class="tab-pane-content traveltime">
-																				<div class="row">
-																					<div class="col-md-8 col-md-offset-2">
-																						<h3 class="title">2018 Public Holidays</h3>
-																						<div class="table-wrapper">
-																							<table>
-																								<thead>
-																									<tr>
-																										<th>Holidays</th>
-																										<th>Date</th>
-																									</tr>
-																								</thead>
-																								<tbody>
-																									<tr>
-																										<td class="title">
-																											New Year
-																										</td>
-																										<td class="date">
-																											1 Jan 2018
-																										</td>
-																									</tr>
-																									<tr>
-																										<td class="title">
-																											Martin Luther King Day
-																										</td>
-																										<td class="date">
-																											15 Jan 2018
-																										</td>
-																									</tr>
-																									<tr>
-																										<td class="title">
-																											Memorial Day
-																										</td>
-																										<td class="date">
-																											28 May 2018
-																										</td>
-																									</tr>
-																									<tr>
-																										<td class="title">
-																											Independence Day
-																										</td>
-																										<td class="date">
-																											4 Jul 2018
-																										</td>
-																									</tr>
-																									<tr>
-																										<td class="title">
-																											Labor Day
-																										</td>
-																										<td class="date">
-																											3 Sep 2018
-																										</td>
-																									</tr>
-																									<tr>
-																										<td class="title">
-																											Thanksgiving
-																										</td>
-																										<td class="date">
-																											22 Nov 2018
-																										</td>
-																									</tr>
-																									<tr>
-																										<td class="title">
-																											Day After Thanksgiving
-																										</td>
-																										<td class="date">
-																											23 Nov 2018
-																										</td>
-																									</tr>
-																									<tr>
-																										<td class="title">
-																											Christmas Day
-																										</td>
-																										<td class="date">
-																											25 Dec 2018
-																										</td>
-																									</tr>
-																								</tbody>
-																							</table>
-																						</div>
-																						<p>
-																							Classes are normally not held and most school facilities are closed on public holidays. All published course start dates fall on a Monday. If the Monday is a public holiday, the start date will fall on a Tuesday. Compensation will not be made for classes not offered on public holidays. 
-																						</p>
-																					</div>
-																				</div>
+																				<p>
+																					This Kaplan International English school is accredited by ACCET (Accrediting Council for Continuing Education and Training).
+																				</p>
 																			</div>
 																		</div>
 																	</div>
@@ -2331,7 +2055,337 @@ function removeClass(el, className) {
 										</div>
 									</div>
 								</div>
-<!-- Seventh row : LIFE AROUND THE SCHOOL ::: END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Fifth row : SCHOOL INFORMATION ::: END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Sixth row : SCHOOL PHOTO GALLERY - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+								<div class="ds-row ds-row-6 clearfix">
+									<div class="field field-type-ds clearfix">
+										<div class="field-items">
+											<div class="field-item even">
+												<!-- Section Start -->
+												<div class="section-content fullwidth photogallery-wrap m-collapsible" id="PhotoGallery">
+													<div class="section-inner container photogallery">
+														<div class="section-head">
+															<h2 class="title">
+																<a data-target="#collapse-PhotoGallery" href="#PhotoGallery" class="visible-xs m-title collapsed scroll" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-PhotoGallery">
+																	Photo Gallery
+																</a>
+																<span class="base hidden-xs">
+																	Photo Gallery
+																</span>
+															</h2>
+															<p class="desc hidden-xs">
+																Check out our photo galleries! You will see our students learning together, hanging out together and achieving together.
+															</p>
+														</div>
+														<div class="section-body">
+															<div class="collapse collapsible-item" id="collapse-PhotoGallery">
+																<!-- Image Gallery -->
+																<div class="image-gallery fullwidth">
+																	<div class="row-eq-height image-items">
+																		<div class="item">
+																			<a href="#" class="school-photo views-field sch-pho-01" data-toggle="modal" data-target=".modal-school-photo" tabindex="0" onclick="removeClass('.sch-pho-zoom, .thumb', 'active'); addClass('.sch-pho-zoom01, .thumb01', 'active')">
+																				<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/school/photos/washington-dc-and-city.jpg">
+																			</a>
+																		</div>
+																		<div class="item">
+																			<a href="#" class="school-photo views-field sch-pho-02" data-toggle="modal" data-target=".modal-school-photo" tabindex="0" onclick="removeClass('.sch-pho-zoom, .thumb', 'active'); addClass('.sch-pho-zoom02, .thumb02', 'active')">
+																				<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-01.jpg">
+																			</a>
+																		</div>
+																		<div class="item">
+																			<a href="#" class="school-photo views-field sch-pho-03" data-toggle="modal" data-target=".modal-school-photo" tabindex="0" onclick="removeClass('.sch-pho-zoom, .thumb', 'active'); addClass('.sch-pho-zoom03, .thumb03', 'active')">
+																				<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-02.jpg">
+																			</a>
+																		</div>
+																		<div class="item">
+																			<a href="#" class="school-photo views-field sch-pho-04" data-toggle="modal" data-target=".modal-school-photo" tabindex="0" onclick="removeClass('.sch-pho-zoom, .thumb', 'active'); addClass('.sch-pho-zoom04, .thumb04', 'active')">
+																				<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-03.jpg">
+																			</a>
+																		</div>
+																	</div>
+																</div>
+
+																<!-- Image Gallery : MODAL (More Photos) -->
+																<div class="modal fade modal-photos modal-school-photo" tabindex="-1" role="dialog" aria-hidden="false">
+																	<button type="button" class="close icon-ki-close" data-dismiss="modal" aria-label="Close"></button>
+																	<div class="modal-dialog">
+																		<div class="modal-content">
+																			<div class="modal-body">
+																				<!-- Carousel Slider -->
+																				<div class="carousel carousel-counter carousel-mini-controls slide views-view-fields" data-interval="false" data-ride="carousel" id="carousel-school-photos">
+
+																					<!-- Wrapper for slides -->
+																					<div class="carousel-inner">
+																						<div class="item sch-pho-zoom sch-pho-zoom01 active">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/school/photos/washington-dc-and-city.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom sch-pho-zoom02">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-01.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom sch-pho-zoom03">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-02.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom sch-pho-zoom04">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-03.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-04.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-05.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-06.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-07.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-08.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-09.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-10.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-11.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-12.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-20.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-14.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-15.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-16.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-17.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-18.jpg">
+																						</div>
+																						<div class="item sch-pho-zoom">
+																							<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-19.jpg">
+																						</div>
+																					</div>
+
+																					<!-- Carousel Thumbnails -->
+																					<div class="image-thumbs hidden-xs">
+																						<ul class="row-eq-height carousel-indicators">
+																							<li data-target="#carousel-school-photos" data-slide-to="0" class="thumb thumb01 active">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/school/photos/washington-dc-and-city.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="1" class="thumb thumb02">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-01.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="2" class="thumb thumb03">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-02.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="3" class="thumb thumb04">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-03.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="4" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-04.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="5" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-05.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="6" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-06.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="7" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-07.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="8" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-08.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="9" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-09.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="10" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-10.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="11" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-11.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="12" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-12.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="13" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-20.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="14" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-14.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="15" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-15.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="16" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-16.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="17" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-17.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="18" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-18.jpg">
+																							</li>
+																							<li data-target="#carousel-school-photos" data-slide-to="19" class="thumb">
+																								<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/64x43/public/desti-washington-washington-gall-19.jpg">
+																							</li>
+																						</ul>
+																					</div>
+
+																					<!-- Carousel Nav Control -->
+																					<a class="left carousel-control" data-slide="prev" href="#carousel-school-photos">
+																						<span class="icon icon-ki-carousel-left-bold"></span>
+																					</a>
+																					<a class="right carousel-control" data-slide="next" href="#carousel-school-photos">
+																						<span class="icon icon-ki-carousel-right-bold"></span>
+																					</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Section End -->
+											</div>
+										</div>
+									</div>
+								</div>
+<!-- Sixth row : SCHOOL PHOTO GALLERY ::: END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Seventh row : SOCIAL ACTIVITIES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+								<div class="ds-row ds-row-7 clearfix">
+									<div class="field field-type-ds clearfix">
+										<div class="field-items">
+											<div class="field-item odd">
+												<!-- Section Start -->
+												<div class="section-content fullwidth activity-wrap m-collapsible" id="Activity">
+													<div class="section-inner container activity">
+														<div class="section-head">
+															<h2 class="title">
+																<a data-target="#collapse-Activity" href="#Activity" class="visible-xs m-title collapsed scroll" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-Activity">
+																	Social Activities
+																</a>
+																<span class="base hidden-xs">
+																	Social Activities
+																</span>
+															</h2>
+															<p class="desc hidden-xs">
+																Our social program is designed to help give you a taste at all the best things your city has to offer, helping you build memories that will last a lifetime.
+															</p>
+														</div>
+														<div class="section-body">
+															<div class="collapse collapsible-item" id="collapse-Activity">
+																<!-- Featured Activities -->
+																<div class="row-eq-height flex-items featured">
+																	<div class="flex-item">
+																		<div class="activity-item">
+																			<div class="image">
+																				<div class="image-inner">
+																					<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-21.jpg" class="img-responsive">
+																				</div>
+																			</div>
+																			<div class="desc">
+																				<span class="day-of-week">Monday</span>
+																				<span class="activity-text">Visit the White House or the Lincoln Memorial</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="flex-item">
+																		<div class="activity-item">
+																			<div class="image">
+																				<div class="image-inner">
+																					<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/school/photos/US_WashingtonDC_School_780x520_11.JPG" class="img-responsive">
+																				</div>
+																			</div>
+																			<div class="desc">
+																				<span class="day-of-week">Tuesday</span>
+																				<span class="activity-text">Enjoy a good range of shops and malls in Georgetown</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="flex-item">
+																		<div class="activity-item">
+																			<div class="image">
+																				<div class="image-inner">
+																					<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-07.jpg" class="img-responsive">
+																				</div>
+																			</div>
+																			<div class="desc">
+																				<span class="day-of-week">Wednesday</span>
+																				<span class="activity-text">Movie day</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="flex-item">
+																		<div class="activity-item">
+																			<div class="image">
+																				<div class="image-inner">
+																					<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-08.jpg" class="img-responsive">
+																				</div>
+																			</div>
+																			<div class="desc">
+																				<span class="day-of-week">Thursday</span>
+																				<span class="activity-text">Visit the impressive Smithsonian Museums</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="flex-item">
+																		<div class="activity-item">
+																			<div class="image">
+																				<div class="image-inner">
+																					<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/780x520/public/desti-washington-washington-gall-09.jpg" class="img-responsive">
+																				</div>
+																			</div>
+																			<div class="desc">
+																				<span class="day-of-week">Friday</span>
+																				<span class="activity-text">Have a fun night out in Georgetown, a student area</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="flex-item">
+																		<div class="activity-item">
+																			<div class="image">
+																				<div class="image-inner">
+																					<img src="https://cdn.kaplaninternational.com/sites/default/files/styles/585x390/public/city/photos/NewYork-CityMain-780x520-10.jpg" class="img-responsive">
+																				</div>
+																			</div>
+																			<div class="desc">
+																				<span class="day-of-week">Saturday</span>
+																				<span class="activity-text">Visit New York or Philadelphia for the weekend</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="note">
+																	<p>
+																		* Number of Social activities per week: 2–5; additional independent activities are available daily
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Section End -->
+											</div>
+										</div>
+									</div>
+								</div>
+<!-- Seventh row : SOCIAL ACTIVITIES ::: END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- Eighth row : ACCOMMODATION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 								<div class="ds-row ds-row-8 clearfix">
 									<div class="field field-type-ds clearfix">
@@ -2349,6 +2403,9 @@ function removeClass(el, className) {
 																	Optional Accommodation
 																</span>
 															</h2>
+															<p class="desc hidden-xs">
+																We know it’s an important part of your decision. Kaplan is committed to finding the highest-quality student residences and homestays — those where you’ll feel the most at home.
+															</p>
 														</div>
 														<div class="section-body">
 															<div class="collapse collapsible-item" id="collapse-Accommodation">
@@ -2416,6 +2473,8 @@ function removeClass(el, className) {
 									</div>
 								</div>
 <!-- Eighth row : ACCOMMODATION ::: END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- ALL SECTIONS END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 							</div>
 						</div>
 					</section>
@@ -4719,6 +4778,74 @@ function removeClass(el, className) {
 				window.jQuery.ui || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
 			</script>
 			<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+
+<script>
+// * * * * * CUSTOM JS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+$.noConflict();
+jQuery( document ).ready(function( $ ) {
+
+	// * * * * * Bootstrap Offset Option for AFFIX and SCROLLSPY
+	$('#pagenav').affix({
+		offset: { top: $('#Hero').height() }
+	});
+
+	$('body').scrollspy({
+		offset: 128
+	});
+
+
+	// * * * * * Toggle button text changer
+	// Course Price
+	$('.price-view-toggle').click(function(){
+		$(this).text(function(i,old){
+			return old=='More price examples' ?  'View Less' : 'More price examples';
+		});
+	});
+	// Facility
+	$('.facility-view-toggle').click(function(){
+		$(this).text(function(i,old){
+			return old=='View more facilities +' ?  'View less facilities -' : 'View more facilities +';
+		});
+	});
+});
+
+
+// * * * * * Image Gallery Identifier
+// Image matching between Four images and Modal ones
+function addClass(el, className) {
+	var el = document.querySelectorAll(el);
+	for (i = 0; i < el.length; i++) {
+		if (el.classList) {
+			el[i].classList.add(className);
+		} else {
+			el[i].className += ' ' + className;
+		}
+	}
+}
+function removeClass(el, className) {
+	var el = document.querySelectorAll(el);
+	for (i = 0; i < el.length; i++) {
+		if (el[i].classList) {
+			el[i].classList.remove(className);
+		} else {
+			el[i].className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+		}
+	}
+}
+</script>
+
+
+
+
+
+
+
+
+
+
 			<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
 			<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-animate.min.js"></script>
 			<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.22/angular-cookies.min.js"></script>
