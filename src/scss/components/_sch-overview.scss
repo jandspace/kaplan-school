@@ -47,7 +47,7 @@
 											display: inline-block;
 											height: 0;
 											width: 0;
-											color: #007DB3;
+											color: $color-secondary-bluegreen;
 											top: 2px;
 											left: -18px;
 										}
@@ -118,7 +118,7 @@
 
 // .node-type-school .field-name-field-course-cta a.btn-default span {
 //     font-size: 10px;
-//     font-weight: 400
+//     font-weight: $font-weight
 // }
 
 // .node-type-school .field-name-field-course-cta a.btn-text {
@@ -157,7 +157,7 @@
 // }
 
 // .node-type-school .field-name-field-course-cta a.btn-text-plain span {
-//     font-weight: 700
+//     font-weight: $font-weight-bold
 // }
 
 // @media(max-width:767px) {

@@ -5,7 +5,7 @@
 .node-school {
 	.field-item {
 		.accommodation-wrap {
-			background: #F0F0F0;
+			background: $color-grey-c;
 
 			.accommodation {
 				.section-body {
@@ -26,13 +26,13 @@
 
 							.item-inner {
 								flex: 1;
-								background-color: #F0F0F0;
+								background-color: $color-grey-c;
 								position: relative;
 								padding-bottom: 60px;
 								box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
 
 								@media #{$sm-min} {
-									background-color: #FFFFFF;
+									background-color: $color-white;
 								}
 
 								.image {
@@ -46,7 +46,7 @@
 										line-height: 1.1em;
 										margin-bottom: 0.75em;
 										text-transform: uppercase;
-										color: #202020;
+										color: $color-grey-l;
 										overflow: hidden;
 										padding-bottom: 6px;
 										border-bottom: 1px dotted #ccc;
@@ -68,7 +68,7 @@
 												display: inline-block;
 												height: 0;
 												width: 0;
-												color: #007DB3;
+												color: $color-secondary-bluegreen;
 												top: 0;
 												left: -18px;
 											}
@@ -86,15 +86,15 @@
 										width: 100%;
 										font-size: 13px;
 										background-color: transparent;
-										border: 1px solid #007DB3;
-										color: #007DB3;
+										border: 1px solid $color-secondary-bluegreen;
+										color: $color-secondary-bluegreen;
 										@media #{$sm-min} {
 											max-width: 200px;
 
 											&:hover {
-												color: #FFFFFF;
-												border: 1px solid #007DB3;
-												background-color: #007DB3;
+												color: $color-white;
+												border: 1px solid $color-secondary-bluegreen;
+												background-color: $color-secondary-bluegreen;
 											}
 										}
 									}

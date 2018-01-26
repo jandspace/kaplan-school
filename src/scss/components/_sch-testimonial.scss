@@ -19,17 +19,17 @@
 				z-index: -1;
 			}
 			&:before {
-				background-color: #F0F0F0;
+				background-color: $color-grey-c;
 				top: 0;
 			}
 			&:after {
-				background-color: #FFFFFF;
+				background-color: $color-white;
 				bottom: 0;
 			}
 
 			.testimonial-item {
 				padding: 4%;
-				background-color: #FFFFFF;
+				background-color: $color-white;
 				background-image: url(../images/school-testimonial-bg.jpg);
 				background-size: 100%;
 				background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 				}
 
 				.desc {
-					color: #404040;
+					color: $color-grey-j;
 					overflow: hidden;
 					.testimonial {
 						font-size: 14px;

@@ -5,7 +5,7 @@
 .node-school {
 	.field-item {
 		.students-wrap {
-			background: #F0F0F0;
+			background: $color-grey-c;
 
 			.students {
 				.section-head {
@@ -33,7 +33,7 @@
 										font-size: 60px;
 										text-align: center;
 										margin-bottom: 10px;
-										color: #007DB3;
+										color: $color-secondary-bluegreen;
 									}
 									.desc {
 										font-size: 13px;
@@ -43,7 +43,7 @@
 										.figure {
 											display: block;
 											font-size: 18px;
-											color: #202020;
+											color: $color-grey-l;
 											font-weight: 600;
 										}
 									}

@@ -4,12 +4,6 @@
 // 		Please do use it rarely
 // -----------------------------------------------------------------------------
 
-// .section-body {
-// 	.collapsible-item {
-// 		display: block !important;
-// 	}
-// }
-
 div {
 	&.course-form {
 		background-color: #E0E0E0;
@@ -21,11 +15,11 @@ div {
 	width: 100%;
 	z-index: 2;
 	.breadcrumb {
-		font-weight: 700;
-		color: #FFFFFF;
+		font-weight: $font-weight-bold;
+		color: $color-white;
 		span {
-			font-weight: 400;
-			color: #FFFFFF;
+			font-weight: $font-weight;
+			color: $color-white;
 		}
 	}
 	

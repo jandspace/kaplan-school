@@ -5,7 +5,7 @@
 .node-school {
 	.field-item {
 		.course-wrap {
-			background: #F0F0F0;
+			background: $color-grey-c;
 			padding-bottom: 0;
 
 			.course {
@@ -57,17 +57,17 @@
 								-webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
 								-moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
 								box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.025);
-								background-color: #F0F0F0;
+								background-color: $color-grey-c;
 
 								@media #{$sm-min} {
-									background-color: #FFFFFF;
+									background-color: $color-white;
 								}
 
 								.icon-container {
 									float: left;
 									font-size: 36px;
 									margin: 0 6px 0 0;
-									color: #404040;
+									color: $color-grey-j;
 
 									@media #{$sm-min} {
 										float: none;
@@ -81,11 +81,11 @@
 
 									.title {
 										vertical-align: middle;
-										font-weight: 700;
+										font-weight: $font-weight-bold;
 										line-height: 1.1em;
 										margin-bottom: 0.25em;
 										text-transform: uppercase;
-										color: #202020;
+										color: $color-grey-l;
 										overflow: hidden;
 										font-size: 16px;
 
@@ -122,7 +122,7 @@
 									.price-show {
 										font-size: 13px;
 										text-decoration: none;
-										border-bottom: 1px solid #007DB3;
+										border-bottom: 1px solid $color-secondary-bluegreen;
 									}
 									.one-price {
 										ul.course-items {
@@ -141,9 +141,9 @@
 											position: relative;
 											margin: 0 ;
 											padding: 0;
-											border-bottom: 1px solid #DDDDDD;
+											border-bottom: 1px solid $color-grey-e;
 											&:first-child {
-												border-top: 1px solid #DDDDDD;
+												border-top: 1px solid $color-grey-e;
 											}
 											a {
 												display: block;
@@ -151,7 +151,7 @@
 												margin: 0 -15px;
 												padding: 6px 35px 6px 15px;
 												font-size: 13px;
-												color: #404040;
+												color: $color-grey-j;
 												text-decoration: none;
 												
 												&:after {
@@ -175,10 +175,10 @@
 												z-index: 2;
 												transition: all 0.2s ease-out;
 												a {
-													background-color: #007DB3;
-													color: #FFFFFF;
+													background-color: $color-secondary-bluegreen;
+													color: $color-white;
 													&:after {
-														color: #FFFFFF;
+														color: $color-white;
 													}
 												}
 											}
@@ -200,14 +200,14 @@
 										width: 100%;
 										font-size: 13px;
 										background-color: transparent;
-										border: 1px solid #007DB3;
-										color: #007DB3;
+										border: 1px solid $color-secondary-bluegreen;
+										color: $color-secondary-bluegreen;
 
 										@media #{$sm-min} {
 											&:hover {
-												color: #FFFFFF;
-												border: 1px solid #007DB3;
-												background-color: #007DB3;
+												color: $color-white;
+												border: 1px solid $color-secondary-bluegreen;
+												background-color: $color-secondary-bluegreen;
 											}
 										}
 									}
