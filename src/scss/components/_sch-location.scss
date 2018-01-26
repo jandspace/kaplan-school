@@ -52,7 +52,7 @@
 									max-width: 320px;
 								}
 								@media #{$md-min} {
-									padding: 15px;
+									padding: 40px 15px;
 								}
 
 								.item {
@@ -90,8 +90,11 @@
 											color: $color-accent-yellow;
 											text-decoration: underline;
 										}
-										li {
-											margin-bottom: 0.2em;
+										ul {
+											margin-bottom: 0;
+											li {
+												margin-bottom: 0.2em;
+											}
 										}
 									}
 								}
@@ -127,13 +130,10 @@
 									}
 								}
 								@media #{$sm-min} {
-									min-height: 300px;
+									min-height: 48vh;
 								}
 								@media #{$md-min} {
-									min-height: 320px;
-								}
-								@media #{$md-min} {
-									min-height: 380px;
+									min-height: 38vh;
 								}
 							}
 
