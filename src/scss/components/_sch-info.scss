@@ -443,9 +443,12 @@
 								padding: 30px 0;
 								align-self: center;
 								@media #{$sm-min} {
-									width: 600px;
+									width: 580px;
 								}
 								@media #{$md-min} {
+									width: 680px;
+								}
+								@media #{$lg-min} {
 									width: 780px;
 								}
 
@@ -577,7 +580,7 @@
 								&.close {
 									position: fixed;
 									z-index: 10001;
-									padding: 15px;
+									padding: 2%;
 									font-size: 24px;
 									color: #FFFFFF;
 									opacity: 0.8;

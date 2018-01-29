@@ -1891,8 +1891,11 @@ a.btn-slide {
               align-self: center; }
       @media only screen and (min-width: 768px) {
         .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos .modal-dialog {
-          width: 600px; } }
+          width: 580px; } }
       @media only screen and (min-width: 992px) {
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos .modal-dialog {
+          width: 680px; } }
+      @media only screen and (min-width: 1200px) {
         .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos .modal-dialog {
           width: 780px; } }
       .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos .modal-dialog .modal-content {
@@ -1996,7 +1999,7 @@ a.btn-slide {
     .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos button.close {
       position: fixed;
       z-index: 10001;
-      padding: 15px;
+      padding: 2%;
       font-size: 24px;
       color: #FFFFFF;
       opacity: 0.8;
