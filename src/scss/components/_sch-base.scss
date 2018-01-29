@@ -166,7 +166,7 @@
 								}
 
 								&:before {
-									content: "\e617";
+									content: "\e683";
 									font-family: 'kie';
 									position: absolute;
 									bottom: -14px;
@@ -175,10 +175,10 @@
 									height: 28px;
 									line-height: 28px;
 									text-align: center;
-									font-size: 8px;
+									font-size: 14px;
 									color: $color-white;
 									background-color: #7C6FA8;
-									transform: rotate(0deg);
+									transform: rotate(180deg);
 									transition: all 0.3s ease;
 									border-radius: 50%;
 								}
@@ -190,7 +190,7 @@
 									&:before {
 										bottom: 2px;
 										left: calc(50% - 14px);
-										transform: rotate(135deg);
+										transform: rotate(0deg);
 										background-color: transparent;
 										color: rgba(255,255,255,0.6);
 									}

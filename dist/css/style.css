@@ -878,7 +878,7 @@ a.btn-slide {
             .node-school .field-item .section-content.m-collapsible .section-head h2.title a:hover, .node-school .field-item .section-content.m-collapsible .section-head h2.title a:focus {
               text-decoration: none; }
             .node-school .field-item .section-content.m-collapsible .section-head h2.title a:before {
-              content: "\e617";
+              content: "\e683";
               font-family: 'kie';
               position: absolute;
               bottom: -14px;
@@ -887,12 +887,12 @@ a.btn-slide {
               height: 28px;
               line-height: 28px;
               text-align: center;
-              font-size: 8px;
+              font-size: 14px;
               color: #FFFFFF;
               background-color: #7C6FA8;
-              -webkit-transform: rotate(0deg);
-                  -ms-transform: rotate(0deg);
-                      transform: rotate(0deg);
+              -webkit-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                      transform: rotate(180deg);
               transition: all 0.3s ease;
               border-radius: 50%; }
             .node-school .field-item .section-content.m-collapsible .section-head h2.title a.collapsed {
@@ -902,9 +902,9 @@ a.btn-slide {
               .node-school .field-item .section-content.m-collapsible .section-head h2.title a.collapsed:before {
                 bottom: 2px;
                 left: calc(50% - 14px);
-                -webkit-transform: rotate(135deg);
-                    -ms-transform: rotate(135deg);
-                        transform: rotate(135deg);
+                -webkit-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                        transform: rotate(0deg);
                 background-color: transparent;
                 color: rgba(255, 255, 255, 0.6); } }
   .node-school .field-item .section-content .cta-container {
@@ -1179,10 +1179,11 @@ a.btn-slide {
           color: #007DB3;
           top: 2px;
           left: -18px; }
-      @media only screen and (min-width: 768px) {
-        .node-school .field-item .overview-wrap .overview .section-body .flex-items .flex-item .cta-container {
-          padding-left: 20px;
-          text-align: left; } }
+      .node-school .field-item .overview-wrap .overview .section-body .flex-items .flex-item .cta-container {
+        text-align: left; }
+        @media only screen and (min-width: 768px) {
+          .node-school .field-item .overview-wrap .overview .section-body .flex-items .flex-item .cta-container {
+            padding-left: 20px; } }
       .node-school .field-item .overview-wrap .overview .section-body .flex-items .flex-item .video-wrapper {
         padding: 10px 0; }
         @media only screen and (max-width: 767px) {
@@ -1198,95 +1199,132 @@ a.btn-slide {
   background: #503f8b;
   background: linear-gradient(to bottom, #655799 0%, #240f6e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#503f8b', endColorstr='#240f6e',GradientType=0 ); }
-  .node-school .field-item .location-wrap .location .section-body {
+  @media only screen and (max-width: 767px) {
+    .node-school .field-item .location-wrap {
+      background: #FFFFFF; } }
+  .node-school .field-item .location-wrap .location .section-head .panel-open {
+    text-align: left;
+    margin: -20px 0 20px 0;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .node-school .field-item .location-wrap .location .section-head .panel-open a {
+      display: inline-block;
+      position: relative;
+      text-decoration: underline; }
+      .node-school .field-item .location-wrap .location .section-head .panel-open a:after {
+        content: "\e682";
+        font-family: 'kie'; }
+      .node-school .field-item .location-wrap .location .section-head .panel-open a.collapsed:after {
+        content: "\e683"; }
+  @media only screen and (max-width: 767px) {
+    .node-school .field-item .location-wrap .location .section-body {
+      background: #F0F0F0; }
+      .node-school .field-item .location-wrap .location .section-body .collapse {
+        position: relative; }
+        .node-school .field-item .location-wrap .location .section-body .collapse:before {
+          position: absolute;
+          content: "";
+          left: 30px;
+          top: -15px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 10px 15px 10px;
+          border-color: transparent transparent #F0F0F0 transparent; } }
+  .node-school .field-item .location-wrap .location .section-body .flex-items {
     margin-left: 0;
     margin-right: 0;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .node-school .field-item .location-wrap .location .section-body .item.text-container {
+    .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container {
       -webkit-flex: 0 0 100%;
           -ms-flex: 0 0 100%;
               flex: 0 0 100%;
       width: 100%;
       text-align: center; }
       @media only screen and (min-width: 768px) {
-        .node-school .field-item .location-wrap .location .section-body .item.text-container {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container {
           -webkit-flex: 0 0 50%;
               -ms-flex: 0 0 50%;
                   flex: 0 0 50%;
           max-width: 50%; } }
       @media only screen and (min-width: 992px) {
-        .node-school .field-item .location-wrap .location .section-body .item.text-container {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container {
           -webkit-flex: 0 0 44%;
               -ms-flex: 0 0 44%;
                   flex: 0 0 44%;
           max-width: 44%; } }
       @media only screen and (min-width: 1200px) {
-        .node-school .field-item .location-wrap .location .section-body .item.text-container {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container {
           -webkit-flex: 0 0 38%;
               -ms-flex: 0 0 38%;
                   flex: 0 0 38%;
           max-width: 38%; } }
-      .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner {
+      .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner {
         display: inline-block;
         padding: 30px;
         width: 100%;
         text-align: left; }
         @media only screen and (max-width: 767px) {
-          .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner {
-            padding-bottom: 0; } }
+          .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner {
+            padding: 0 30px; } }
         @media only screen and (min-width: 768px) {
-          .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner {
+          .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner {
             width: auto;
             min-width: 290px;
             max-width: 320px; } }
         @media only screen and (min-width: 992px) {
-          .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner {
+          .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner {
             padding: 40px 15px; } }
-        .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item.address {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item.address {
           margin-bottom: 2em; }
-        .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item .title {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .title {
           margin: 0 0 0.5em 0;
           padding: 0 0 0.5em 0;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
           width: 100%;
           font-size: 18px;
-          color: #FFFFFF; }
+          color: #404040; }
           @media only screen and (min-width: 768px) {
-            .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item .title {
-              font-size: 20px; } }
+            .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .title {
+              color: #FFFFFF;
+              font-size: 20px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1); } }
           @media only screen and (min-width: 992px) {
-            .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item .title {
+            .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .title {
               font-size: 24px; } }
-        .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item .desc {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc {
           margin: 0;
           padding: 0;
           width: 100%;
-          color: #FFFFFF;
+          color: #404040;
           font-size: 13px; }
+          @media only screen and (min-width: 768px) {
+            .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc {
+              color: #FFFFFF; } }
           @media only screen and (min-width: 992px) {
-            .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item .desc {
+            .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc {
               font-size: 14px; } }
-          .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item .desc a {
+          .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc a {
             margin-top: 0.25em;
             display: block;
             font-size: 12px;
             color: #FFC82E;
             text-decoration: underline; }
-          .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item .desc ul {
+          .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc ul {
             margin-bottom: 0; }
-            .node-school .field-item .location-wrap .location .section-body .item.text-container .text-inner .item .desc ul li {
+            .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc ul li {
               margin-bottom: 0.2em; }
-    .node-school .field-item .location-wrap .location .section-body .item.map-container {
+    .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container {
       position: relative;
-      padding-bottom: 30px;
+      padding: 30px 0;
       -webkit-flex: 0 0 100%;
           -ms-flex: 0 0 100%;
               flex: 0 0 100%;
       max-width: 100%; }
       @media only screen and (min-width: 768px) {
-        .node-school .field-item .location-wrap .location .section-body .item.map-container {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container {
           -webkit-flex: 0 0 50%;
               -ms-flex: 0 0 50%;
                   flex: 0 0 50%;
@@ -1297,44 +1335,43 @@ a.btn-slide {
                       -ms-grid-row-align: stretch;
                   align-self: stretch; } }
       @media only screen and (min-width: 992px) {
-        .node-school .field-item .location-wrap .location .section-body .item.map-container {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container {
           -webkit-flex: 0 0 56%;
               -ms-flex: 0 0 56%;
                   flex: 0 0 56%;
           max-width: 56%; } }
       @media only screen and (min-width: 1200px) {
-        .node-school .field-item .location-wrap .location .section-body .item.map-container {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container {
           -webkit-flex: 0 0 62%;
               -ms-flex: 0 0 62%;
                   flex: 0 0 62%;
           max-width: 62%; } }
-      .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item {
+      .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-wrapper {
         position: relative;
-        height: 100%; }
-        .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item.in {
-          height: 380px; }
-          @media only screen and (min-width: 768px) {
-            .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item.in {
-              height: none; } }
+        min-height: 62vh; }
+        @media only screen and (max-width: 767px) {
+          .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-wrapper {
+            margin: 0 30px;
+            border: 5px solid #A79FC5; } }
         @media only screen and (min-width: 768px) {
-          .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item {
+          .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-wrapper {
             min-height: 48vh; } }
         @media only screen and (min-width: 992px) {
-          .node-school .field-item .location-wrap .location .section-body .item.map-container .collapsible-item {
+          .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-wrapper {
             min-height: 38vh; } }
-      .node-school .field-item .location-wrap .location .section-body .item.map-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0 30px; }
-        @media only screen and (min-width: 768px) {
-          .node-school .field-item .location-wrap .location .section-body .item.map-container iframe {
-            padding: 0; } }
-      .node-school .field-item .location-wrap .location .section-body .item.map-container .map-trigger {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-wrapper iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 0; }
+          @media only screen and (min-width: 768px) {
+            .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-wrapper iframe {
+              padding: 0; } }
+      .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-trigger {
         padding: 10px 30px; }
-        .node-school .field-item .location-wrap .location .section-body .item.map-container .map-trigger a {
+        .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-trigger a {
           font-size: 12px;
           color: #FFC82E;
           text-transform: uppercase;
