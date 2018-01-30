@@ -190,21 +190,6 @@
 									}
 								}
 							}
-							.view-more {
-								text-align: center;
-								margin-top: 0.5em;
-
-								a.btn-more {
-									padding: 6px 18px;
-									text-transform: uppercase;
-									font-weight: $font-weight-bold;
-									border-top: 1px solid $color-grey-e;
-									&:hover, &:active, &:focus {
-										background-color: #EEEEEE;
-										text-decoration: none;
-									}
-								}
-							}
 						}
 
 						.nationalities {
@@ -308,11 +293,25 @@
 												margin-left: 0;
 											}
 										}
+										a.fact-sheet {
+											display: inline-block;
+											padding: 4px;
+											border: 1px solid transparent;
+											border-bottom: 1px solid $color-secondary-bluegreen;
+											&:hover {
+												color: $color-white;
+												border: 1px solid transparent;
+												background-color: $color-secondary-bluegreen;
+												text-decoration: none;
+											}
+											.icon {
+												margin-left: 6px;
+											}
+										}
 									}
 								}
 
 								.accreditation {
-									height: 100%;
 									padding: 20px;
 									background-color: $color-grey-c;
 									@media #{$sm-min} {
@@ -353,8 +352,7 @@
 								margin: 2% 0 4% 0;
 
 								.image-items {
-									margin-left: 0;
-									margin-right: 0;
+									margin: 0 0 25px 0;
 									padding: 0 2px;
 
 									.item {
@@ -413,6 +411,7 @@
 												}
 												&:focus {
 													outline: none;
+													text-decoration: none;
 												}
 											}
 										}
@@ -423,23 +422,6 @@
 											height: auto;
 											vertical-align: middle;
 											margin: 0 auto;
-										}
-									}
-								}
-
-								.view-photos {
-									text-align: center;
-									margin-top: 2em;
-
-									a.btn-photo {
-										padding: 6px 18px;
-										text-transform: uppercase;
-										font-weight: $font-weight-bold;
-										border-top: 1px solid $color-grey-e;
-										&:hover, &:active, &:focus {
-											background-color: #EEEEEE;
-											text-decoration: none;
-											outline: none;
 										}
 									}
 								}
@@ -621,6 +603,31 @@
 										-ms-transform: rotate(180deg);
 										transform: rotate(180deg);
 									}
+								}
+							}
+						}
+
+						.view-trigger {
+							text-align: center;
+							margin-top: 0.5em;
+
+							a.btn-view {
+								display: inline-block;
+								padding: 6px 18px;
+								min-width: 200px;
+								text-transform: uppercase;
+								font-weight: $font-weight-bold;
+								border: 1px solid transparent;
+								border-top: 1px solid $color-secondary-bluegreen;
+								&:hover {
+									color: $color-white;
+									border: 1px solid $color-secondary-bluegreen;
+									background-color: $color-secondary-bluegreen;
+									text-decoration: none;
+								}
+								&:active, &:focus {
+									outline: none;
+									text-decoration: none;
 								}
 							}
 						}

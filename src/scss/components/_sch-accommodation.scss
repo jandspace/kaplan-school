@@ -85,16 +85,13 @@
 									.btn {
 										width: 100%;
 										font-size: 13px;
-										background-color: transparent;
-										border: 1px solid $color-secondary-bluegreen;
-										color: $color-secondary-bluegreen;
 										@media #{$sm-min} {
 											max-width: 200px;
 
 											&:hover {
 												color: $color-white;
-												border: 1px solid $color-secondary-bluegreen;
-												background-color: $color-secondary-bluegreen;
+												border: 1px solid $color-primary;
+												background-color: $color-primary;
 											}
 										}
 									}

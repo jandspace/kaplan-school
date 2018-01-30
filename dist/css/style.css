@@ -1691,17 +1691,6 @@ a.btn-slide {
             font-weight: 400;
             padding-top: 10px;
             padding-left: 18px; }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .facilities .view-more {
-      text-align: center;
-      margin-top: 0.5em; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .facilities .view-more a.btn-more {
-        padding: 6px 18px;
-        text-transform: uppercase;
-        font-weight: 700;
-        border-top: 1px solid #DDDDDD; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .facilities .view-more a.btn-more:hover, .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .facilities .view-more a.btn-more:active, .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .facilities .view-more a.btn-more:focus {
-          background-color: #EEEEEE;
-          text-decoration: none; }
   .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .nationalities {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
@@ -1789,8 +1778,19 @@ a.btn-slide {
               max-width: 82px; } }
           .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .other-info .flex-item ul li img:first-child {
             margin-left: 0; }
+        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .other-info .flex-item ul li a.fact-sheet {
+          display: inline-block;
+          padding: 4px;
+          border: 1px solid transparent;
+          border-bottom: 1px solid #007DB3; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .other-info .flex-item ul li a.fact-sheet:hover {
+            color: #FFFFFF;
+            border: 1px solid transparent;
+            background-color: #007DB3;
+            text-decoration: none; }
+          .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .other-info .flex-item ul li a.fact-sheet .icon {
+            margin-left: 6px; }
     .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .other-info .flex-item .accreditation {
-      height: 100%;
       padding: 20px;
       background-color: #F0F0F0; }
       @media only screen and (min-width: 768px) {
@@ -1817,8 +1817,7 @@ a.btn-slide {
   .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured {
     margin: 2% 0 4% 0; }
     .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .image-items {
-      margin-left: 0;
-      margin-right: 0;
+      margin: 0 0 25px 0;
       padding: 0 2px; }
       .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .image-items .item {
         padding: 2px;
@@ -1872,7 +1871,8 @@ a.btn-slide {
               right: calc(50% - 24px);
               background-color: rgba(0, 125, 179, 0); }
             .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .image-items .item a.school-photo:focus {
-              outline: none; } }
+              outline: none;
+              text-decoration: none; } }
         .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .image-items .item img {
           display: block;
           width: 100% \9;
@@ -1880,18 +1880,6 @@ a.btn-slide {
           height: auto;
           vertical-align: middle;
           margin: 0 auto; }
-    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .view-photos {
-      text-align: center;
-      margin-top: 2em; }
-      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .view-photos a.btn-photo {
-        padding: 6px 18px;
-        text-transform: uppercase;
-        font-weight: 700;
-        border-top: 1px solid #DDDDDD; }
-        .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .view-photos a.btn-photo:hover, .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .view-photos a.btn-photo:active, .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .view-photos a.btn-photo:focus {
-          background-color: #EEEEEE;
-          text-decoration: none;
-          outline: none; }
   .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos {
     background-color: rgba(0, 0, 0, 0.9); }
     .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos.in {
@@ -2034,6 +2022,25 @@ a.btn-slide {
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         transform: rotate(180deg); }
+  .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .view-trigger {
+    text-align: center;
+    margin-top: 0.5em; }
+    .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .view-trigger a.btn-view {
+      display: inline-block;
+      padding: 6px 18px;
+      min-width: 200px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: 1px solid transparent;
+      border-top: 1px solid #007DB3; }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .view-trigger a.btn-view:hover {
+        color: #FFFFFF;
+        border: 1px solid #007DB3;
+        background-color: #007DB3;
+        text-decoration: none; }
+      .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .view-trigger a.btn-view:active, .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .view-trigger a.btn-view:focus {
+        outline: none;
+        text-decoration: none; }
 
 @media only screen and (max-width: 767px) {
   .node-school .field-item .activity-wrap .activity .section-body .featured {
@@ -2173,17 +2180,14 @@ a.btn-slide {
         text-align: center; }
         .node-school .field-item .accommodation-wrap .accommodation .section-body .flex-items .flex-item .item-inner .btn-container .btn {
           width: 100%;
-          font-size: 13px;
-          background-color: transparent;
-          border: 1px solid #007DB3;
-          color: #007DB3; }
+          font-size: 13px; }
           @media only screen and (min-width: 768px) {
             .node-school .field-item .accommodation-wrap .accommodation .section-body .flex-items .flex-item .item-inner .btn-container .btn {
               max-width: 200px; }
               .node-school .field-item .accommodation-wrap .accommodation .section-body .flex-items .flex-item .item-inner .btn-container .btn:hover {
                 color: #FFFFFF;
-                border: 1px solid #007DB3;
-                background-color: #007DB3; } }
+                border: 1px solid #240F6E;
+                background-color: #240F6E; } }
 
 .node-school .field-item .student_testimonial {
   z-index: 1;
