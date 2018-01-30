@@ -156,6 +156,7 @@
 								padding: 30px 0;
 								flex: 0 0 100%;
 								max-width: 100%;
+								overflow: hidden;
 
 								@media #{$sm-min} {
 									flex: 0 0 50%;
@@ -173,6 +174,7 @@
 								}
 								.map-wrapper {
 									position: relative;
+									height: calc(100% + 1px);
 									min-height: 62vh;
 									@media #{$xs-max} {
 										margin: 0 30px;

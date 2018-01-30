@@ -1322,7 +1322,8 @@ a.btn-slide {
       -webkit-flex: 0 0 100%;
           -ms-flex: 0 0 100%;
               flex: 0 0 100%;
-      max-width: 100%; }
+      max-width: 100%;
+      overflow: hidden; }
       @media only screen and (min-width: 768px) {
         .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container {
           -webkit-flex: 0 0 50%;
@@ -1348,6 +1349,7 @@ a.btn-slide {
           max-width: 62%; } }
       .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-wrapper {
         position: relative;
+        height: calc(100% + 1px);
         min-height: 62vh; }
         @media only screen and (max-width: 767px) {
           .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container .map-wrapper {
