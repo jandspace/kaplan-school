@@ -38,21 +38,21 @@
 								@media #{$md-min} {
 									padding-right: 5%;
 								}
-								ul {
-									list-style: none;
-									li {
-										&:before {
-											content: '●';
-											position: relative;
-											display: inline-block;
-											height: 0;
-											width: 0;
-											color: $color-secondary-bluegreen;
-											top: 2px;
-											left: -18px;
-										}
-									}
-								}
+								// ul {
+								// 	list-style: none;
+								// 	li {
+								// 		&:before {
+								// 			content: '●';
+								// 			position: relative;
+								// 			display: inline-block;
+								// 			height: 0;
+								// 			width: 0;
+								// 			color: $color-secondary-bluegreen;
+								// 			top: 2px;
+								// 			left: -18px;
+								// 		}
+								// 	}
+								// }
 							}
 							.cta-container {
 								text-align: left;

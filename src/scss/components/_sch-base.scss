@@ -85,6 +85,28 @@
 				margin-bottom: 0.4em;
 			}
 
+			ul.bullet-points {
+				list-style: none;
+				margin: 0;
+				padding: 0 0 0 20px;
+				li {
+					position: relative;
+					padding-right: 0;
+					margin-bottom: 0.4em;
+					&:before {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						top: 8px;
+						left: -16px;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background: $color-secondary-bluegreen;
+					}
+				}
+			}
+
 			h2,
 			h3,
 			h4,

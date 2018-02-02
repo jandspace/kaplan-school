@@ -144,7 +144,9 @@
 											ul {
 												margin-bottom: 0;
 												li {
-													margin-bottom: 0.2em;
+													&:before {
+														background-color: $color-white;
+													}
 												}
 											}
 										}

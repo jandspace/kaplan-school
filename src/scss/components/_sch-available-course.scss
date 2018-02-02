@@ -62,56 +62,73 @@
 								@media #{$sm-min} {
 									background-color: $color-white;
 								}
-
-								.icon-container {
-									float: left;
-									font-size: 36px;
-									margin: 0 6px 0 0;
-									color: $color-grey-j;
-
-									@media #{$sm-min} {
-										float: none;
-										font-size: 48px;
-									}
-								}
-
-								.text-container {
-									overflow: hidden;
-									padding-top: 6px;
-
-									.title {
-										vertical-align: middle;
-										font-weight: $font-weight-bold;
-										line-height: 1.1em;
-										margin-bottom: 0.25em;
-										text-transform: uppercase;
-										color: $color-grey-l;
-										overflow: hidden;
-										font-size: 16px;
-
-										@media #{$md-min} {
-											font-size: 18px;
-										}
-										@media #{$lg-min} {
-											font-size: 20px;
-										}
-									}
-
-									.length {
-										font-style: oblique;
-										font-size: 12px;
-
+								.course-type-item {
+									.icon-container {
+										float: left;
+										font-size: 36px;
+										margin: 0 6px 0 0;
+										
 										@media #{$sm-min} {
-											font-size: 13px;
+											float: none;
+											font-size: 48px;
+										}
+									}
+
+									.text-container {
+										overflow: hidden;
+										padding-top: 6px;
+
+										.title {
+											vertical-align: middle;
+											font-weight: $font-weight-bold;
+											line-height: 1.1em;
+											margin-bottom: 0.25em;
+											text-transform: uppercase;
+											overflow: hidden;
+											font-size: 16px;
+											color: $color-grey-l;
+
+											@media #{$md-min} {
+												font-size: 18px;
+											}
+											@media #{$lg-min} {
+												font-size: 20px;
+											}
 										}
 
-									}
+										.length {
+											font-style: oblique;
+											font-size: 12px;
 
-									.desc {
-										clear: both;
-										padding-top: 12px;
+											@media #{$sm-min} {
+												font-size: 13px;
+											}
+
+										}
+
+										.desc {
+											clear: both;
+											padding-top: 12px;
+										}
+									}
+									a {
+										display: block;
+										color: $color-grey-j;
+										&:hover, &:focus,
+										&:hover *, &:focus * {
+											text-decoration: none;
+											color: $color-secondary-bluegreen;
+										}
+									}
+									&:hover, &:focus,
+									&:hover a, &:focus a {
+										color: $color-secondary-bluegreen;
+									}
+									&:hover a.title, &:focus a.title {
+										color: $color-secondary-deepbluegreen;
 									}
 								}
+								
 
 								.price-items {
 									padding-top: 6px;
