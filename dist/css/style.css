@@ -1414,7 +1414,8 @@ a.btn-slide {
       max-width: 100%;
       -webkit-align-self: stretch;
           -ms-flex-item-align: stretch;
-              align-self: stretch; }
+              align-self: stretch;
+      overflow: hidden; }
       @media only screen and (min-width: 768px) {
         .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item {
           -webkit-flex: 0 0 50%;
@@ -1424,9 +1425,9 @@ a.btn-slide {
           padding: 0.75%; } }
       @media only screen and (min-width: 992px) {
         .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item {
-          -webkit-flex: 1%;
-              -ms-flex: 1%;
-                  flex: 1%;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
           max-width: none;
           padding: 0.75%; } }
       .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner {
@@ -1459,7 +1460,9 @@ a.btn-slide {
             text-transform: uppercase;
             overflow: hidden;
             font-size: 16px;
-            color: #202020; }
+            color: #202020;
+            overflow-wrap: break-word;
+            word-wrap: break-word; }
             @media only screen and (min-width: 992px) {
               .node-school .field-item .course-wrap .course .section-body .flex-items .flex-item .item-inner .course-type-item .text-container .title {
                 font-size: 18px; } }
