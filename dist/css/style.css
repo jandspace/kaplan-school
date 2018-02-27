@@ -1320,8 +1320,9 @@ a.btn-slide {
             text-decoration: underline; }
           .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc ul {
             margin-bottom: 0; }
-            .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc ul li:before {
-              background-color: #FFFFFF; }
+            @media only screen and (min-width: 768px) {
+              .node-school .field-item .location-wrap .location .section-body .flex-items .item.text-container .text-inner .item .desc ul li:before {
+                background-color: #FFFFFF; } }
     .node-school .field-item .location-wrap .location .section-body .flex-items .item.map-container {
       position: relative;
       padding: 30px 0;
@@ -1855,16 +1856,17 @@ a.btn-slide {
               font-family: 'kie';
               content: "\e92b";
               position: absolute;
-              bottom: 4px;
-              right: 4px;
+              bottom: 8px;
+              right: 8px;
               width: 42px;
               height: 42px;
               line-height: 42px;
-              font-size: 24px;
+              font-size: 20px;
               text-align: center;
               color: #FFFFFF;
               background-color: rgba(0, 125, 179, 0.75);
-              transition: all .25s; }
+              transition: all .25s;
+              border-radius: 50%; }
             .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .image-items .item a.school-photo:hover:before {
               background-color: rgba(36, 15, 110, 0.75); }
             .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .image-gallery .image-featured .image-items .item a.school-photo:hover:after {
@@ -1941,9 +1943,11 @@ a.btn-slide {
                 top: 50%;
                 margin-top: -62px; } }
             .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos .modal-dialog .modal-content .modal-body .carousel-control.left {
-              left: -30px; }
+              left: -30px;
+              background-image: none; }
             .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos .modal-dialog .modal-content .modal-body .carousel-control.right {
-              right: -30px; }
+              right: -30px;
+              background-image: none; }
             @media only screen and (max-width: 767px) {
               .node-school .field-item .schoolinfo-wrap .schoolinfo .section-body .section-secondary .modal-photos .modal-dialog .modal-content .modal-body .carousel-control.left {
                 left: 50%;
@@ -2269,7 +2273,10 @@ div.course-form {
   z-index: 2; }
   .breadcrumb-container .breadcrumb {
     font-weight: 700;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    background-color: transparent; }
+    .breadcrumb-container .breadcrumb a:hover, .breadcrumb-container .breadcrumb a.focus {
+      color: #FFFFFF; }
     .breadcrumb-container .breadcrumb span {
       font-weight: 400;
       color: #FFFFFF; }

@@ -17,6 +17,13 @@ div {
 	.breadcrumb {
 		font-weight: $font-weight-bold;
 		color: $color-white;
+		background-color: transparent;
+		a {
+			&:hover,
+			&.focus {
+				color: $color-white;
+			}
+		}
 		span {
 			font-weight: $font-weight;
 			color: $color-white;
